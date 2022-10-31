@@ -18,7 +18,8 @@ module.exports = {
         ciPink:'#ff79c6',
         ciPurple:'#bd93f9',
         ciRed:'#ff5555',
-        ciYellow:'#f1fa8c'
+        ciYellow:'#f1fa8c',
+        ciTiter:'#BCC2CD'
 
       }
     },
