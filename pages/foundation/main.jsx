@@ -1,5 +1,6 @@
+import Link from "next/link";
 import React from "react";
-import { StudySteps } from "../data/data";
+import { StudySteps } from "../../data/data";
 
 function main() {
   return (
@@ -13,12 +14,14 @@ function main() {
           </p>
           <div className="grid grid-cols-4 gap-x-2">
             {item.children.map((childItem, index) => (
+              <Link key={index} href={`/foundation/${childItem.title}`}>
               <div
-                key={index}
+                
                 className="bg-ciForeground cursor-pointer hover:bg-ciCyan duration-200 ease-in rounded-lg my-2 p-4"
-              >
+                >
                 <p className="font-bold">{childItem.title}</p>
               </div>
+                </Link>
             ))}
           </div>
         </div>
