@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { CategoryData } from "../data/data";
 import styles from "../styles/Home.module.css";
 
@@ -14,10 +15,16 @@ export default function Home() {
       <section className="grid grid-cols-3 gap-8 gap-y-16  my-20 max-w-5xl mx-auto">
         {CategoryData.map((item, index) => (
           <>
-            <div className="flex  justify-center items-center flex-col cursor-pointer ">
+          
+            <Link href='/main'>
+              <div className="flex  justify-center items-center flex-col cursor-pointer ">
+
               <p className="w-36 h-36 bg-ciComment rounded-full "></p>
-              <p className="text-ciTiter mt-4 font-bold text-2xl">{item.name}</p>
-            </div>
+              <p className="text-ciTiter mt-4 font-bold text-2xl">
+                {item.name}
+              </p>
+              </div>
+            </Link>
           </>
         ))}
       </section>
