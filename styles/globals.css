@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  font-family: "Yekan", "tahoma", "Ubunt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
