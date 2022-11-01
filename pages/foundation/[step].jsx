@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import NumberBoreholes from "../../components/NumberBoreholes";
+import NumberBoreholes from "../../components/foundation/NumberBoreholes";
 
 function StepPage() {
   const router = useRouter();
