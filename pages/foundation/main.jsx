@@ -12,12 +12,12 @@ function main() {
           <p className="text-ciGreen font-bold">
             {item.title} [ {item.children.length} ]
           </p>
-          <div className="grid grid-cols-4 gap-x-2">
+          <div className="grid grid-cols-4 gap-2 ">
             {item.children.map((childItem, index) => (
               <Link key={index} href={`/foundation/${childItem.title}`}>
               <div
                 
-                className="bg-ciForeground cursor-pointer hover:bg-ciCyan duration-200 ease-in rounded-lg my-2 p-4"
+                className="bg-ciForeground cursor-pointer flex items-center h-full  hover:bg-ciCyan duration-200 ease-in rounded-lg my-2 p-4"
                 >
                 <p className="font-bold">{childItem.title}</p>
               </div>

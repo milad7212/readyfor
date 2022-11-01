@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import NumberBoreholes from "../../components/NumberBoreholes";
 
 function StepPage() {
   const router = useRouter();
@@ -62,6 +63,7 @@ function StepPage() {
         Numquam quasi rerum, eligendi ratione animi vero delectus quibusdam debitis earum qui, optio minus nobis sit molestiae. Voluptatum earum adipisci aut odio illo sunt corrupti voluptates dolorum sapiente, quos esse.</p>
      
         <p className="text-ciGreen font-bold ">ورودی</p>
+        <NumberBoreholes/>
       </section>
     </div>
   );
