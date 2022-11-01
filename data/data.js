@@ -1,46 +1,26 @@
 export const CategoryData = [
   {
     name: "دفترچه خاک",
+    link:'/foundation/main',
     content: "12",
     img: "",
     id: "",
   },
   {
-    name: "سازه",
+    name:"مباحث",
+    link:'/topics',
     content: "12",
     img: "",
     id: "",
   },
   {
-    name: "سازه",
+    name:"آزمون نظام",
     content: "12",
     img: "",
+    link:"",
     id: "",
   },
-  {
-    name: "سازه",
-    content: "12",
-    img: "",
-    id: "",
-  },
-  {
-    name: "نظارت",
-    content: "8",
-    img: "",
-    id: "",
-  },
-  {
-    name: "محاسبات",
-    content: "",
-    img: "",
-    id: "",
-  },
-  {
-    name: "",
-    content: "",
-    img: "",
-    id: "",
-  },
+  
 ];
 
 export const StudySteps = [

@@ -16,7 +16,7 @@ export default function Home() {
         {CategoryData.map((item, index) => (
           <>
           
-            <Link href='/foundation/main'>
+            <Link href={item.link}>
               <div className="flex  justify-center items-center flex-col cursor-pointer ">
 
               <p className="w-36 h-36 bg-ciComment rounded-full "></p>

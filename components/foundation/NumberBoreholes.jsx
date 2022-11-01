@@ -8,7 +8,7 @@ import { topicImportanceOfBuilding } from "../../data/data";
 
 function NumberBoreholes() {
   const [boreholesData, setBoreholesData] = useState({
-    Area: 0,
+    Area: '',
     importance: "",
     countBoreholes: "",
   });
