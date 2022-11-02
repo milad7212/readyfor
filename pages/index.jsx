@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <div className=" min-h-screen bg-ciBackground p-4 ">
       <div className="flex flex-col items-center justify-center mt-6 text-ciForeground">
-        <span className="w-40 h-40 bg-ciBackgroundTwo rounded-full"></span>
+        
+        <img className="w-40 h-40 bg-ciBackgroundTwo rounded-full" src="/images/foundation/main2.webp" alt="" />
+        
         <p className="font-bold text-3xl my-5 text-ciPink">مهندسی عمران</p>
         <p className=" font-bold text-xl animate-pulse">راحتتر مهندسی کن</p>
       </div>
