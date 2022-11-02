@@ -19,8 +19,10 @@ export default function Home() {
             <Link href={item.link}>
               <div className="flex  justify-center items-center flex-col cursor-pointer ">
 
-              <p className="w-36 h-36 bg-ciComment rounded-full "></p>
-              <p className="text-ciTiter mt-4 font-bold text-2xl">
+              <div className="w-36 h-36    overflow-hidden ">
+              <img src={item.img} alt="" />
+              </div>
+              <p className="text-ciTiter mt-1 font-bold text-2xl">
                 {item.name}
               </p>
               </div>
