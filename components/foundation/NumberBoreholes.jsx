@@ -96,7 +96,7 @@ function calculateBoreholes(Area, ImportanceOfLand) {
 }
 
 function ShowItem({ data }) {
-  return <div className="my-8 bg-ciForeground p-4 rounded-lg">
+  return <div className="my-8 bg-ciForeground p-4 shadow-md rounded-lg">
     <p className=" font-bold my-3">{data.title}</p>
     <p className="">{data.explain}</p>
     <p className="font-bold my-3">مثال :</p>
