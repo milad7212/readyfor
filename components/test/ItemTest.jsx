@@ -1,7 +1,10 @@
 import React from "react";
+import BookMarkIcon from "../../public/icons/BookMarkIcon";
+import LeftIcon from "../../public/icons/LeftIcon";
+import RightIcon from "../../public/icons/RightIcon";
 
 function ItemTest({ data }) {
-  const { option1, option2, option3, option4 } = data;
+  const { number,option1, option2, option3, option4 } = data;
   return (
     <div className="p-4 relative bg-ciForeground rounded-lg shadow-md max-w-5xl mx-auto ">
       <p className="my-4  font-bold">{data.question}</p>
@@ -26,6 +29,12 @@ function ItemTest({ data }) {
           <input className="mx-1" type="radio" value="3" name="info" />{" "}
           <p className="">{option4.text}</p>
         </div>
+      </div>
+      <div className="flex ">
+      <RightIcon className='text-ciCurrentLine '/>
+      <LeftIcon className={`${number ==1 && 'text-ciTiter'}`}/>
+      <BookMarkIcon className='mr-auto'/>
+        
       </div>
 
       <div className="flex justify-center absolute right-0 left-0 -bottom-4">
