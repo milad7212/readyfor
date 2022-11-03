@@ -1,5 +1,6 @@
 import React from "react";
 import BookMarkIcon from "../../public/icons/BookMarkIcon";
+import EraserIcon from "../../public/icons/EraserIcon";
 import LeftIcon from "../../public/icons/LeftIcon";
 import RightIcon from "../../public/icons/RightIcon";
 
@@ -30,9 +31,10 @@ function ItemTest({ data }) {
           <p className="">{option4.text}</p>
         </div>
       </div>
-      <div className="flex ">
+      <div className="flex items-center ">
       <RightIcon className='text-ciCurrentLine '/>
       <LeftIcon className={`${number ==1 && 'text-ciTiter'}`}/>
+      <EraserIcon className='mr-8'/>
       <BookMarkIcon className='mr-auto'/>
         
       </div>
