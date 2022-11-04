@@ -1,10 +1,10 @@
 import React from "react";
-import BookMarkIcon from "../../public/icons/BookMarkIcon";
-import EraserIcon from "../../public/icons/EraserIcon";
-import LeftIcon from "../../public/icons/LeftIcon";
-import RightIcon from "../../public/icons/RightIcon";
+import BookMarkIcon from "../../components/icons/BookMarkIcon";
+import EraserIcon from "../../components/icons/EraserIcon";
+import LeftIcon from "../../components/icons/LeftIcon";
+import RightIcon from "../../components/icons/RightIcon";
 
-function ItemTest({ data }) {
+function ItemTest({ data,changeQuestion }) {
   const { number,option1, option2, option3, option4 } = data;
   return (
     <div className="p-4 relative bg-ciForeground rounded-lg shadow-md max-w-5xl mx-auto ">
@@ -32,8 +32,8 @@ function ItemTest({ data }) {
         </div>
       </div>
       <div className="flex items-center ">
-      <RightIcon className='text-ciCurrentLine '/>
-      <LeftIcon className={`${number ==1 && 'text-ciTiter'}`}/>
+      <RightIcon className='text-ciCurrentLine ' onClick={()=>{changeQuestion(1)}}/>
+      <LeftIcon className={`${number ==1 && 'text-ciTiter'}`} onClick={()=>changeQuestion(-1)}/>
       <EraserIcon className='mr-8'/>
       <BookMarkIcon className='mr-auto'/>
         

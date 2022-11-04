@@ -1,14 +1,15 @@
 import React from "react";
 
-function BookMarkIcon({className}) {
+function BookMarkIcon({ className,onClick }) {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      className={`w-6 h-6 cursor-pointer ${className}`}
+    onClick={onClick}
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    className={`w-6 h-6 cursor-pointer active:scale-90 duration-200 ease-in  ${className}`}
+    xmlns="http://www.w3.org/2000/svg"
     >
       <path
         strokeLinecap="round"

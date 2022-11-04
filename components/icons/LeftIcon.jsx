@@ -1,14 +1,15 @@
 import React from "react";
 
-function LeftIcon({className}) {
+function LeftIcon({className,onClick}) {
   return (
     <svg
+    onClick={onClick}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className={`w-8 h-8 cursor-pointer ${className}`}
+      className={`w-8 h-8 cursor-pointer active:scale-90 duration-200 ease-in ${className}`}
     >
       <path
         strokeLinecap="round"

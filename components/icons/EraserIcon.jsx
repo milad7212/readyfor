@@ -1,14 +1,15 @@
 import React from "react";
 
-function EraserIcon({className}) {
+function EraserIcon({className,onClick}) {
   return (
     <svg
+    onClick={onClick}
       stroke="currentColor"
       fill="currentColor"
       stroke-width="0"
       viewBox="0 0 24 24"
       
-      className={`w-8 h-8 cursor-pointer ${className}`}
+      className={`w-8 h-8 cursor-pointer active:scale-90 duration-200 ease-in ${className}`}
       xmlns="http://www.w3.org/2000/svg"
     >
       <g id="Eraser">
