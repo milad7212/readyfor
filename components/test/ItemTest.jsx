@@ -33,7 +33,7 @@ function ItemTest({ data,changeQuestion }) {
       </div>
       <div className="flex items-center ">
       <RightIcon className='text-ciCurrentLine ' onClick={()=>{changeQuestion(1)}}/>
-      <LeftIcon className={`${number ==1 && 'text-ciTiter'}`} onClick={()=>changeQuestion(-1)}/>
+      <LeftIcon className={`${number ==1 ? 'text-ciTiter ':'text-ciCurrentLine'}`} onClick={()=>changeQuestion(-1)}/>
       <EraserIcon className='mr-8'/>
       <BookMarkIcon className='mr-auto'/>
         

@@ -185,12 +185,12 @@ export const testsData = [
     option3: { text: "شرق" },
     option4: { text: "غرب" },
   },
-  {
-    number: 1,
-    question: "",
-    option1: { text: "" },
-    option2: { text: "" },
-    option3: { text: "" },
-    option4: { text: "" },
-  },
+  // {
+  //   number: 1,
+  //   question: "",
+  //   option1: { text: "" },
+  //   option2: { text: "" },
+  //   option3: { text: "" },
+  //   option4: { text: "" },
+  // },
 ];
