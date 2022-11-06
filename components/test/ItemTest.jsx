@@ -4,12 +4,18 @@ import EraserIcon from "../../components/icons/EraserIcon";
 import LeftIcon from "../../components/icons/LeftIcon";
 import RightIcon from "../../components/icons/RightIcon";
 
-function ItemTest({ data, changeQuestion, selectAnsQuestion, indexQuestion,deletedAnsQuestion }) {
+function ItemTest({
+  data,
+  changeQuestion,
+  selectAnsQuestion,
+  indexQuestion,
+  deletedAnsQuestion,
+  bookedAnsQuestion,
+}) {
   const { number, option1, option2, option3, option4 } = data;
   const [reminderBtn, setReminderBtn] = useState(false);
   function onChangeValue(event) {
-    selectAnsQuestion(event.target.value , indexQuestion);
-
+    selectAnsQuestion(event.target.value, indexQuestion);
   }
 
   return (
@@ -68,11 +74,14 @@ function ItemTest({ data, changeQuestion, selectAnsQuestion, indexQuestion,delet
           className={`${number == 1 ? "text-ciTiter " : "text-ciCurrentLine"}`}
           onClick={() => changeQuestion(-1)}
         />
-        <EraserIcon className="mr-8" onClick={()=>deletedAnsQuestion(indexQuestion)}/>
+        <EraserIcon
+          className="mr-8"
+          onClick={() => deletedAnsQuestion(indexQuestion)}
+        />
         <BookMarkIcon
-          onClick={() => setReminderBtn((e) => !e)}
+          onClick={() => bookedAnsQuestion(indexQuestion)}
           className={`mr-auto active:scale-90 duration-200 ease-in  ${
-            reminderBtn ? "" : "fill-ciOrange"
+            data.booked ? "fill-ciOrange" : ""
           }`}
         />
       </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import BookMarkIcon from "../../components/icons/BookMarkIcon";
 
 import ItemTest from "../../components/test/ItemTest";
 import { testsData } from "../../data/data";
@@ -25,6 +26,12 @@ function TestPage() {
   }
 
   function choiceStyle(value) {
+    if (questions[value].answer && value == witchQuestion) {
+      return "bg-ciGreen  -translate-y-1 ";
+    }
+    if (questions[value].answer) {
+      return "bg-ciGreen  ";
+    }
     if (value == witchQuestion) {
       return "bg-ciForeground shadow-lg  ";
     } else {
@@ -41,18 +48,36 @@ function TestPage() {
     setQuestions(newQuestion);
   }
 
-  function deletedAnsQuestion(indexQuestion){
+  function deletedAnsQuestion(indexQuestion) {
     let newQuestion = [...questions];
     newQuestion[indexQuestion] = {
       ...newQuestion[indexQuestion],
-      answer: '',
+      answer: "",
     };
+    setQuestions(newQuestion);
+  }
+
+  function bookedAnsQuestion(indexQuestion) {
+    let newQuestion = [...questions];
+
+    if (newQuestion[indexQuestion].booked) {
+      newQuestion[indexQuestion] = {
+        ...newQuestion[indexQuestion],
+        booked: false,
+      };
+    } else {
+      newQuestion[indexQuestion] = {
+        ...newQuestion[indexQuestion],
+        booked: true,
+      };
+    }
+    console.log("newQuestion", newQuestion);
     setQuestions(newQuestion);
   }
 
   return (
     <div className=" min-h-screen bg-ciBackground p-4 relative flex flex-col items-center ">
-      <p className="absolute right-0  top-0 p-4 text-ciTiter ">
+      <p className="absolute right-0   top-0 p-4 text-ciTiter ">
         آزمون عمران اجرا اردیبهشت 97
       </p>
       <div className="absolute left-0 top-0 text-ciTiter flex p-4">
@@ -69,9 +94,14 @@ function TestPage() {
             key={index}
             className={`${choiceStyle(
               index
-            )} w-6 h-6 rounded-lg flex justify-center items-center text-xs font-bold cursor-pointer active:scale-90 duration-100`}
+            )} relative w-6 h-6 rounded-lg flex justify-center items-center text-xs font-bold cursor-pointer active:scale-90 duration-100`}
           >
             {index + 1}
+            {item.booked && (
+              <span className="absolute -top-4 flex left-0 right-0 justify-center">
+                <BookMarkIcon className="fill-ciOrange w-3 h-3 " />
+              </span>
+            )}
           </span>
         ))}
       </div>
@@ -83,6 +113,7 @@ function TestPage() {
           changeQuestion={changeQuestion}
           deletedAnsQuestion={deletedAnsQuestion}
           selectAnsQuestion={selectAnsQuestion}
+          bookedAnsQuestion={bookedAnsQuestion}
         />
       </div>
     </div>
