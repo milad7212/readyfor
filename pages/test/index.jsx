@@ -17,7 +17,7 @@ function TestPage() {
 
   function changeQuestion(value) {
     let newTest = witchQuestion + value;
-    if (newTest >= 0 && newTest <= 60) {
+    if (newTest >= 0 && newTest < questions.length) {
       setWitchQuestion(newTest);
     }
   }
