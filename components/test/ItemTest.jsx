@@ -13,8 +13,9 @@ function ItemTest({
   bookedAnsQuestion,
 }) {
   const { number, option1, option2, option3, option4 } = data;
-  const [reminderBtn, setReminderBtn] = useState(false);
+  
   function onChangeValue(event) {
+    
     selectAnsQuestion(event.target.value, indexQuestion);
   }
 
@@ -31,7 +32,9 @@ function ItemTest({
             className="mx-1"
             type="radio"
             value="1"
-            name={`test_${data.number}`}
+            name={`test_${data.number}_question`}
+            checked={data.answer==1}
+            
           />
           <p className="ml-3">{option1.text}</p>
         </div>
@@ -40,7 +43,9 @@ function ItemTest({
             className="mx-1"
             type="radio"
             value="2"
-            name={`test_${data.number}`}
+            checked={data.answer==2}
+            
+            name={`test_${data.number}_question_question`}
           />
           <p className="ml-3">{option2.text}</p>
         </div>
@@ -49,7 +54,8 @@ function ItemTest({
             className="mx-1"
             type="radio"
             value="3"
-            name={`test_${data.number}`}
+            checked={data.answer==3}
+            name={`test_${data.number}_question`}
           />{" "}
           <p className="">{option3.text}</p>
         </div>
@@ -57,8 +63,9 @@ function ItemTest({
           <input
             className="mx-1"
             type="radio"
-            value="3"
-            name={`test_${data.number}`}
+            value="4"
+            checked={data.answer==4}
+            name={`test_${data.number}_question`}
           />{" "}
           <p className="">{option4.text}</p>
         </div>
