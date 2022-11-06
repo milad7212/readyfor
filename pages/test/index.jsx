@@ -1,27 +1,19 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import ItemTest from "../../components/test/ItemTest";
 import { testsData } from "../../data/data";
 function TestPage() {
   const [witchQuestion, setWitchQuestion] = useState(0);
-  const [itemQuestions, setItemQuestions] = useState([])
+
+  const [questions, setQuestions] = useState(testsData);
   // const buildItemsQuestions=new Array(testsData.length).
 
   // status for every question
   // answered
   // reminder
   // nothing
-  useEffect(() => {
-    const items = testsData.map((item) => {
-      return { number: item.number, status: "noting", correct: "", answer: "" };
-    });
-    console.log('items :>> ', items);
-    setItemQuestions(items)
-  
-    
-  }, [])
-  
- 
+  // { number: item.number, status: "noting", correct: "", answer: "" };
+
   function changeQuestion(value) {
     let newTest = witchQuestion + value;
     if (newTest >= 0 && newTest <= 60) {
@@ -40,6 +32,24 @@ function TestPage() {
     }
   }
 
+  function selectAnsQuestion(answer, indexQuestion) {
+    let newQuestion = [...questions];
+    newQuestion[indexQuestion] = {
+      ...newQuestion[indexQuestion],
+      answer: answer,
+    };
+    setQuestions(newQuestion);
+  }
+
+  function deletedAnsQuestion(indexQuestion){
+    let newQuestion = [...questions];
+    newQuestion[indexQuestion] = {
+      ...newQuestion[indexQuestion],
+      answer: '',
+    };
+    setQuestions(newQuestion);
+  }
+
   return (
     <div className=" min-h-screen bg-ciBackground p-4 relative flex flex-col items-center ">
       <p className="absolute right-0  top-0 p-4 text-ciTiter ">
@@ -53,13 +63,13 @@ function TestPage() {
         className="  mt-8 w-full flex  flex-wrap gap-1 p-4"
         style={{ direction: "ltr" }}
       >
-        {itemQuestions.map((item, index) => (
+        {questions.map((item, index) => (
           <span
             onClick={() => changeCertainQuestion(index)}
             key={index}
             className={`${choiceStyle(
               index
-            )} w-6 h-6 rounded-lg flex justify-center items-center text-xs font-bold cursor-pointer`}
+            )} w-6 h-6 rounded-lg flex justify-center items-center text-xs font-bold cursor-pointer active:scale-90 duration-100`}
           >
             {index + 1}
           </span>
@@ -68,8 +78,11 @@ function TestPage() {
 
       <div className="mt-6">
         <ItemTest
-          data={testsData[witchQuestion]}
+          data={questions[witchQuestion]}
+          indexQuestion={witchQuestion}
           changeQuestion={changeQuestion}
+          deletedAnsQuestion={deletedAnsQuestion}
+          selectAnsQuestion={selectAnsQuestion}
         />
       </div>
     </div>
