@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 function SelectTestPage() {
   const [witchTest, setWitchTest] = useState("");
-  const router= useRouter();
+  const router = useRouter();
   return (
     <div className=" min-h-screen bg-ciBackground p-4 relative  ">
       <div className="flex  gap-4">
@@ -27,19 +27,21 @@ function SelectTestPage() {
         />
       </div>
       <div className="grid grid-cols-2 my-16">
-        <section className="flex flex-wrap gap-2 ">
-          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11].map(
+        <section className="flex flex-wrap gap-2">
+          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
             (item, index) => (
               <>
-                <div
-                  className="w-20 h-20 bg-ciTiter flex justify-center
+                 
+                  <div
+                    className="w-20 h-20 bg-ciTiter flex justify-center
                   cursor-pointer hover:bg-gray-300 duration-100 ease-out active:scale-95
                  items-center 
                 rounded-lg flex-col"
-                >
-                  <p className="font-bold">1399</p>
-                  <p className="text-sm">خرداد ماه</p>
-                </div>
+                  >
+                    <p className="font-bold">1399</p>
+                    <p className="text-sm">خرداد ماه</p>
+                  </div>
+                
               </>
             )
           )}
@@ -61,10 +63,32 @@ function SelectTestPage() {
               استفاده از ماشین حساب مجاز
             </p>
             <p className=" font-bold  text-ciPink"> نمره منفی دارد</p>
-            <button onClick={()=>router.push('/test/56852')} className="w-[90%] mx-auto bg-ciOrange rounded-lg py-4 font-bold hover:bg-ciGreen duration-200 ease-in hover:scale-105 active:scale-95">
+            <button
+              onClick={() => router.push("/test/56852")}
+              className="w-[90%] mx-auto bg-ciOrange rounded-lg py-4 font-bold hover:bg-ciGreen duration-200 ease-in hover:scale-105 active:scale-95"
+            >
               شروع آزمون
             </button>
           </div>
+        </section>
+      </div>
+      <div className="">
+      <section className="flex flex-wrap gap-2">
+          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
+            (item, index) => (
+              <>
+              
+                 <div
+                    className="w-26 overflow-hidden    flex justify-center
+                  cursor-pointer  duration-100 ease-out active:scale-95
+                 items-center 
+                rounded-xl flex-col"
+                  >
+                    <img src={`/images/book/${index+1}.jpg`} alt="" />
+                  </div>
+              </>
+            )
+          )}
         </section>
       </div>
     </div>
