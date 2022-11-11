@@ -1,124 +1,89 @@
-import React, { useState, useEffect } from "react";
-import BookMarkIcon from "../../components/icons/BookMarkIcon";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
-import ItemTest from "../../components/test/ItemTest";
-import { testsData } from "../../data/data";
-function TestPage() {
-  const [witchQuestion, setWitchQuestion] = useState(0);
-
-  const [questions, setQuestions] = useState(testsData);
-
-  // const buildItemsQuestions=new Array(testsData.length).
-
-  // status for every question
-  // answered
-  // reminder
-  // nothing
-  // { number: item.number, status: "noting", correct: "", answer: "" };
-
-  function changeQuestion(value) {
-    let newTest = witchQuestion + value;
-    if (newTest >= 0 && newTest < questions.length) {
-      setWitchQuestion(newTest);
-    }
-  }
-  function changeCertainQuestion(value) {
-    setWitchQuestion(value);
-  }
-
-  function choiceStyle(value) {
-    if (questions[value].answer && value == witchQuestion) {
-      return "bg-ciGreen  -translate-y-1 ";
-    }
-    if (questions[value].answer) {
-      return "bg-ciGreen  ";
-    }
-    if (value == witchQuestion) {
-      return "bg-ciForeground shadow-lg  ";
-    } else {
-      return "bg-gray-300";
-    }
-  }
-
-  function selectAnsQuestion(answer, indexQuestion) {
-    let newQuestion = [...questions];
-    newQuestion[indexQuestion] = {
-      ...newQuestion[indexQuestion],
-      answer: answer,
-    };
-    setQuestions(newQuestion);
-  }
-
-  function deletedAnsQuestion(indexQuestion) {
-    let newQuestion = [...questions];
-    newQuestion[indexQuestion] = {
-      ...newQuestion[indexQuestion],
-      answer: "",
-    };
-    setQuestions(newQuestion);
-  }
-
-  function bookedAnsQuestion(indexQuestion) {
-    let newQuestion = [...questions];
-
-    if (newQuestion[indexQuestion].booked) {
-      newQuestion[indexQuestion] = {
-        ...newQuestion[indexQuestion],
-        booked: false,
-      };
-    } else {
-      newQuestion[indexQuestion] = {
-        ...newQuestion[indexQuestion],
-        booked: true,
-      };
-    }
-    console.log("newQuestion", newQuestion);
-    setQuestions(newQuestion);
-  }
-
+function SelectTestPage() {
+  const [witchTest, setWitchTest] = useState("");
+  const router= useRouter();
   return (
-    <div className=" min-h-screen bg-ciBackground p-4 relative flex flex-col items-center ">
-      <p className="absolute right-0   top-0 p-4 text-ciTiter ">
-        آزمون عمران اجرا اردیبهشت 97
-      </p>
-      <div className="absolute left-0 top-0 text-ciTiter flex p-4">
-        <p className="ml-4">زمان باقی مانده :</p>
-        <p className="text-ciForeground font-bold">2:54:36</p>
-      </div>
-      <div
-        className="  mt-8 w-full flex  flex-wrap gap-1 p-4"
-        style={{ direction: "ltr" }}
-      >
-        {questions.map((item, index) => (
-          <span
-            onClick={() => changeCertainQuestion(index)}
-            key={index}
-            className={`${choiceStyle(
-              index
-            )} relative w-6 h-6 rounded-lg flex justify-center items-center text-xs font-bold cursor-pointer active:scale-90 duration-100`}
-          >
-            {index + 1}
-            {item.booked && (
-              <span className="absolute -top-4 flex left-0 right-0 justify-center">
-                <BookMarkIcon className="fill-ciOrange w-3 h-3 " />
-              </span>
-            )}
-          </span>
-        ))}
-      </div>
-
-      <div className="mt-6">
+    <div className=" min-h-screen bg-ciBackground p-4 relative  ">
+      <div className="flex  gap-4">
         <ItemTest
-          data={questions[witchQuestion]}
-          indexQuestion={witchQuestion}
-          changeQuestion={changeQuestion}
-          deletedAnsQuestion={deletedAnsQuestion}
-          selectAnsQuestion={selectAnsQuestion}
-          bookedAnsQuestion={bookedAnsQuestion}
+          name="نظارت"
+          id="1"
+          active={witchTest}
+          onClick={() => setWitchTest(1)}
         />
+        <ItemTest
+          name="اجرا"
+          id="2"
+          active={witchTest}
+          onClick={() => setWitchTest(2)}
+        />
+        <ItemTest
+          name="محاسبات"
+          id="3"
+          active={witchTest}
+          onClick={() => setWitchTest(3)}
+        />
+      </div>
+      <div className="grid grid-cols-2 my-16">
+        <section className="flex flex-wrap gap-2 ">
+          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11].map(
+            (item, index) => (
+              <>
+                <div
+                  className="w-20 h-20 bg-ciTiter flex justify-center
+                  cursor-pointer hover:bg-gray-300 duration-100 ease-out active:scale-95
+                 items-center 
+                rounded-lg flex-col"
+                >
+                  <p className="font-bold">1399</p>
+                  <p className="text-sm">خرداد ماه</p>
+                </div>
+              </>
+            )
+          )}
+        </section>
+        <section className="">
+          {false && (
+            <div className="flex items-center flex-col">
+              <p className=" font-bold text-3xl text-ciPink">
+                {" "}
+                10 آزمون بده ، قبولی
+              </p>
+            </div>
+          )}
+          <div className="text-right flex flex-col justify-between h-full">
+            <p className=" font-bold  text-ciPink"> تعداد سوالات : 60</p>
+            <p className=" font-bold  text-ciPink"> زمان آزمون : 150 دقیقه</p>
+            <p className=" font-bold  text-ciPink"> حدنصاب قبولی : 50 درصد</p>
+            <p className=" font-bold  text-ciPink">
+              استفاده از ماشین حساب مجاز
+            </p>
+            <p className=" font-bold  text-ciPink"> نمره منفی دارد</p>
+            <button onClick={()=>router.push('/test/56852')} className="w-[90%] mx-auto bg-ciOrange rounded-lg py-4 font-bold hover:bg-ciGreen duration-200 ease-in hover:scale-105 active:scale-95">
+              شروع آزمون
+            </button>
+          </div>
+        </section>
       </div>
     </div>
   );
 }
 
-export default TestPage;
+export default SelectTestPage;
+
+function ItemTest({ name, id, active, onClick }) {
+  return (
+    <div
+      onClick={onClick}
+      className={`${
+        active == id ? "bg-ciGreen" : "bg-ciTiter"
+      } w-16 h-16 shadow-[0_3px_10px_rgb(0,0,0,0.2)] 
+        cursor-pointer hover:scale-105 duration-150 ease-in 
+         text-ciBackground rounded-lg active:scale-95 flex justify-center items-center`}
+    >
+      <p className="font-bold">{name}</p>
+    </div>
+  );
+}
