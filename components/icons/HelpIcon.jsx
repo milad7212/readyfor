@@ -7,7 +7,10 @@ function HelpIcon({ className }) {
     <div className="">
       <div
         onClick={() => setShowHelp((s) => !s)}
-        className="flex my-4 items-center cursor-pointer filter text-ciForeground duration-150 ease-linear hover:text-ciCyan hover:text-xl"
+        className={`flex my-4 ${
+          showHelp ? "text-ciCyan" : ""
+        } items-center cursor-pointer filter text-ciForeground duration-150
+         ease-linear hover:text-ciCyan hover:text-xl`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,14 +28,13 @@ function HelpIcon({ className }) {
         </svg>
         <span className="mr-2  font-bold">راهنمایی استفاده</span>
       </div>
-     
-        <ShowText
+
+      <ShowText
         show={showHelp}
-          title="خواندن سوالات بر طبق هر مبحث"
-          text="
+        title="خواندن سوالات بر طبق هر مبحث"
+        text="
       سوالات امتحانات بر اساس هر مبحث برای شما جدا شده است و شما میتوانید هر مبحث را با توجه به سوالاتی که از آن آمده است مطالعه کنید. مطمن باشید این موثرترین راه ممکن است و بعد از مطالعه حیرت میکنید از سطح تسلط خود"
-        />
-     
+      />
     </div>
   );
 }

@@ -7,7 +7,7 @@ function SelectTestPage() {
   const router = useRouter();
   return (
     <div className=" min-h-screen bg-ciBackground p-4 relative  ">
-      <Divider name="حالت آزمون"/>
+      <Divider name="حالت آزمون" />
       <div className="flex  gap-4">
         <ItemTest
           name="نظارت"
@@ -72,22 +72,34 @@ function SelectTestPage() {
           </div>
         </section>
       </div>
-      <Divider name="حالت مطالعه"/>
-      <HelpIcon/>
+      <Divider name="حالت مطالعه" />
+      <HelpIcon />
       <div className="">
         <section className="flex flex-wrap gap-2">
           {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
             (item, index) => (
               <>
                 <div
-                  className="w-26 overflow-hidden    flex justify-center
+                  className="w-26     flex justify-center
                   cursor-pointer  duration-100 ease-out active:scale-95
                  items-center 
-                rounded-xl flex-col
+                 flex-col
                 filter hover:brightness-150
-                "
+                object-fill
+                  relative
+                  "
                 >
-                  <img src={`/images/book/${index + 1}.jpg`} alt="" />
+                  <div className="absolute w-7 h-7 top-0 right-0  flex justify-center items-center
+                   bg-gray-300    rounded-md shadow-lg  ">
+                    
+
+                    <span className="font-bold text-ciBackground">
+                      {Math.round(Math.random() * 20)}
+                    </span>
+                    
+                    
+                  </div>
+                  <img className='h-full rounded-xl' src={`/images/book/${index + 1}.jpg`} alt="" />
                 </div>
               </>
             )
@@ -115,7 +127,7 @@ function ItemTest({ name, id, active, onClick }) {
   );
 }
 
-function Divider({name='تقسیم کننده'}) {
+function Divider({ name = "تقسیم کننده" }) {
   return (
     <div className="flex items-center my-4">
       <span className="bg-ciTiter h-[2px] rounded-lg w-full"></span>
