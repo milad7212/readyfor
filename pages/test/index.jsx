@@ -6,6 +6,7 @@ function SelectTestPage() {
   const router = useRouter();
   return (
     <div className=" min-h-screen bg-ciBackground p-4 relative  ">
+      <Divider name="حالت آزمون"/>
       <div className="flex  gap-4">
         <ItemTest
           name="نظارت"
@@ -31,17 +32,15 @@ function SelectTestPage() {
           {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
             (item, index) => (
               <>
-                 
-                  <div
-                    className="w-20 h-20 bg-ciTiter flex justify-center
+                <div
+                  className="w-20 h-20 bg-ciTiter flex justify-center
                   cursor-pointer hover:bg-gray-300 duration-100 ease-out active:scale-95
                  items-center 
                 rounded-lg flex-col"
-                  >
-                    <p className="font-bold">1399</p>
-                    <p className="text-sm">خرداد ماه</p>
-                  </div>
-                
+                >
+                  <p className="font-bold">1399</p>
+                  <p className="text-sm">خرداد ماه</p>
+                </div>
               </>
             )
           )}
@@ -72,20 +71,22 @@ function SelectTestPage() {
           </div>
         </section>
       </div>
+      <Divider name="حالت مطالعه"/>
       <div className="">
-      <section className="flex flex-wrap gap-2">
+        <section className="flex flex-wrap gap-2">
           {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
             (item, index) => (
               <>
-              
-                 <div
-                    className="w-26 overflow-hidden    flex justify-center
+                <div
+                  className="w-26 overflow-hidden    flex justify-center
                   cursor-pointer  duration-100 ease-out active:scale-95
                  items-center 
-                rounded-xl flex-col"
-                  >
-                    <img src={`/images/book/${index+1}.jpg`} alt="" />
-                  </div>
+                rounded-xl flex-col
+                filter hover:brightness-150
+                "
+                >
+                  <img src={`/images/book/${index + 1}.jpg`} alt="" />
+                </div>
               </>
             )
           )}
@@ -108,6 +109,16 @@ function ItemTest({ name, id, active, onClick }) {
          text-ciBackground rounded-lg active:scale-95 flex justify-center items-center`}
     >
       <p className="font-bold">{name}</p>
+    </div>
+  );
+}
+
+function Divider({name='تقسیم کننده'}) {
+  return (
+    <div className="flex items-center my-8">
+      <span className="bg-ciTiter h-[2px] rounded-lg w-full"></span>
+      <p className="mx-4 whitespace-nowrap text-ciTiter font-bold">{name}</p>
+      <span className="bg-ciTiter h-[2px] rounded-lg w-full"></span>
     </div>
   );
 }
