@@ -25,7 +25,7 @@ export const CategoryData = [
     name: "میدان کار",
     content: "12",
     img: "/images/foundation/soilNote.webp",
-    link: "",
+    link: "/job",
     id: "",
   },
 
