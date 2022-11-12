@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import HelpIcon from "../../components/icons/HelpIcon";
 
 function SelectTestPage() {
   const [witchTest, setWitchTest] = useState("");
@@ -72,6 +73,7 @@ function SelectTestPage() {
         </section>
       </div>
       <Divider name="حالت مطالعه"/>
+      <HelpIcon/>
       <div className="">
         <section className="flex flex-wrap gap-2">
           {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
@@ -115,7 +117,7 @@ function ItemTest({ name, id, active, onClick }) {
 
 function Divider({name='تقسیم کننده'}) {
   return (
-    <div className="flex items-center my-8">
+    <div className="flex items-center my-4">
       <span className="bg-ciTiter h-[2px] rounded-lg w-full"></span>
       <p className="mx-4 whitespace-nowrap text-ciTiter font-bold">{name}</p>
       <span className="bg-ciTiter h-[2px] rounded-lg w-full"></span>
