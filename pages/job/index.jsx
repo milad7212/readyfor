@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { companiesData } from "../../data/companies";
 
 function JobPage() {
