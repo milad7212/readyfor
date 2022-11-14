@@ -6,18 +6,37 @@ import { companiesData } from "../../data/companies";
 function JobPage() {
   const [companies, setCompanies] = useState(companiesData);
   const [search, setSearch] = useState("");
-  const [isPeyman, setIsPeyman] = useState(true);
-  const [isHelper, setIsHelper] = useState(true);
+  const [witchCompany, setWitchCompany] = useState(1)
 
   function searching(word) {
-    let searched = companiesData.filter((item) =>
-      item.LatestCompanyName.includes(word)
-    );
-    setCompanies(searched);
+    if (word == "") {
+      
+      if (witchCompany == 1) {
+        setCompanies(companiesData);
+      }
+      if (witchCompany == 2) {
+        let filterPayman = companiesData.filter(
+          (item) => item.CertificateTypeName == "پیمانکار"
+        );
+        setCompanies(filterPayman);
+      }
+      if (witchCompany == 3) {
+        let filterHelper = companiesData.filter(
+          (item) => item.CertificateTypeName == "مشاور"
+        );
+        setCompanies(filterHelper);
+      }
+    } else {
+      let searched = companies.filter((item) =>
+        item.LatestCompanyName.includes(word)
+      );
+      setCompanies(searched);
+    }
   }
 
   function onChangeValue(event) {
     const value = event.target.value;
+    setWitchCompany(value)
     if (value == 1) {
       setCompanies(companiesData);
     }
@@ -69,10 +88,20 @@ function JobPage() {
             name="filter"
             defaultChecked
             value="1"
-            id='allCompany'
+            id="allCompany"
           />
-          <RadioInput label="فقط پیمانکاران" name="filter" value="2"  id='justPeyman'/>
-          <RadioInput label="فقط مشاورین" name="filter" value="3"  id='justHelper'/>
+          <RadioInput
+            label="فقط پیمانکاران"
+            name="filter"
+            value="2"
+            id="justPeyman"
+          />
+          <RadioInput
+            label="فقط مشاورین"
+            name="filter"
+            value="3"
+            id="justHelper"
+          />
         </div>
       </div>
       <div className="flex flex-wrap gap-4 my-8 justify-center">
@@ -97,9 +126,6 @@ function JobPage() {
               </p>
               <BookMarkIcon />
             </div>
-
-            {/* <p className="">{item.IssueDate}</p>
-                <p className="">{item.ExpireDate}</p> */}
           </div>
         ))}
       </div>
@@ -109,7 +135,7 @@ function JobPage() {
 
 export default JobPage;
 
-function RadioInput({ label, name, defaultChecked = false, value,id }) {
+function RadioInput({ label, name, defaultChecked = false, value, id }) {
   return (
     <>
       <div className="mx-2">
