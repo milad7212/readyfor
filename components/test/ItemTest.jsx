@@ -45,7 +45,7 @@ function ItemTest({
             value="2"
             checked={data.answer==2}
             
-            name={`test_${data.number}_question_question`}
+            name={`test_${data.number}_question`}
           />
           <p className="ml-3">{option2.text}</p>
         </div>

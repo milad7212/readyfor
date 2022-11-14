@@ -1,5 +1,6 @@
 import Link from "next/link";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import BookMarkIcon from "../../components/icons/BookMarkIcon";
 import { companiesData } from "../../data/companies";
 
 function JobPage() {
@@ -14,14 +15,26 @@ function JobPage() {
     );
     setCompanies(searched);
   }
-  useEffect(() => {
-    if(isPeyman && isHelper){
-        return
+
+  function onChangeValue(event) {
+    const value = event.target.value;
+    if (value == 1) {
+      setCompanies(companiesData);
     }
-    if(isPeyman){}
-    if(isHelper){}
-  }, [isPeyman,isHelper])
-  
+    if (value == 2) {
+      let filterPayman = companiesData.filter(
+        (item) => item.CertificateTypeName == "پیمانکار"
+      );
+      setCompanies(filterPayman);
+    }
+    if (value == 3) {
+      let filterHelper = companiesData.filter(
+        (item) => item.CertificateTypeName == "مشاور"
+      );
+      setCompanies(filterHelper);
+    }
+    setSearch("");
+  }
 
   return (
     <div className=" min-h-screen bg-ciBackground p-4 ">
@@ -47,18 +60,19 @@ function JobPage() {
           <span className="">تعداد شرکتها :</span>
           <span className=" mr-4 font-bold">{companies.length}</span>
         </p>
-        <div className="text-ciOrange flex items-center cursor-pointer">
-          <input onClick={()=>setIsPeyman((v)=>!v)} className='cursor-pointer'  checked={isPeyman} type="checkbox" id="peyman" />
-          <label className="mr-2 cursor-pointer" htmlFor="peyman">
-            {" "}
-            پیمانکار
-          </label>
-        </div>
-        <div className="text-ciOrange flex items-center">
-          <input onClick={()=>setIsHelper((v)=>!v)}  className='cursor-pointer'  checked={isHelper} type="checkbox" id="helper" />
-          <label className="mr-2 cursor-pointer" htmlFor="helper">
-            مشاور
-          </label>
+        <div
+          onChange={() => onChangeValue(event)}
+          className="text-ciOrange flex items-center cursor-pointer"
+        >
+          <RadioInput
+            label="همه شرکت ها"
+            name="filter"
+            defaultChecked
+            value="1"
+            id='allCompany'
+          />
+          <RadioInput label="فقط پیمانکاران" name="filter" value="2"  id='justPeyman'/>
+          <RadioInput label="فقط مشاورین" name="filter" value="3"  id='justHelper'/>
         </div>
       </div>
       <div className="flex flex-wrap gap-4 my-8 justify-center">
@@ -72,14 +86,18 @@ function JobPage() {
               href={`https://sajar.mporg.ir/Company/CompanyDetail?cp=${item.CompanyID}&cr=${item.CertificateID}&crt=${item.CertificateTypeID}`}
             >
               <a target="_blank" rel="noreferrer">
-                <p className="font-bold text-center mb-3 ">
+                <p className="font-bold text-center my-2 ">
                   {item.LatestCompanyName}
                 </p>
               </a>
             </Link>
-            <p className="text-center mb-3 text-sm  font-bold">
-              {item.CertificateTypeName}
-            </p>
+            <div className="flex justify-between mt-6 ">
+              <p className="text-sm  font-semibold">
+                {item.CertificateTypeName}
+              </p>
+              <BookMarkIcon />
+            </div>
+
             {/* <p className="">{item.IssueDate}</p>
                 <p className="">{item.ExpireDate}</p> */}
           </div>
@@ -90,3 +108,24 @@ function JobPage() {
 }
 
 export default JobPage;
+
+function RadioInput({ label, name, defaultChecked = false, value,id }) {
+  return (
+    <>
+      <div className="mx-2">
+        <input
+          className="cursor-pointer"
+          type="radio"
+          value={value}
+          id={id}
+          name={name}
+          defaultChecked={defaultChecked}
+        />
+        <label className="mr-2 cursor-pointer" htmlFor={id}>
+          {" "}
+          {label}
+        </label>
+      </div>
+    </>
+  );
+}
