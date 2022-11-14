@@ -76,9 +76,9 @@ function JobPage() {
       </div>
       <div className="flex justify-around items-center my-2">
         
-        <p className="text-ciOrange">
+        <p className="text-ciOrange font-bold">
           <span className="">تعداد شرکتها :</span>
-          <span className=" mr-4 font-bold">{companies.length}</span>
+          <span className=" mr-4 ">{companies.length}</span>
         </p>
         <div
           onChange={() => onChangeValue(event)}
@@ -148,7 +148,7 @@ function RadioInput({ label, name, defaultChecked = false, value, id }) {
           name={name}
           defaultChecked={defaultChecked}
         />
-        <label className="mr-2 cursor-pointer" htmlFor={id}>
+        <label className="mr-2 cursor-pointer font-bold" htmlFor={id}>
           {" "}
           {label}
         </label>
