@@ -62,7 +62,7 @@ function JobPage() {
           تقدیم به خانم مهندس آقاملایی{" "}
         </p>
       </div>
-      <div className="my-4">
+      <div className="my-6">
         <input
           value={search}
           onChange={(v) => {
@@ -70,11 +70,12 @@ function JobPage() {
             searching(v.target.value);
           }}
           type="text"
-          className=" w-full h-16 rounded-lg outline-none p-4"
+          className=" w-full h-12 rounded-lg outline-none p-4"
           placeholder="جستجو نام شرکت"
         />
       </div>
       <div className="flex justify-around items-center my-2">
+        
         <p className="text-ciOrange">
           <span className="">تعداد شرکتها :</span>
           <span className=" mr-4 font-bold">{companies.length}</span>
