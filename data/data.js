@@ -75,7 +75,6 @@ export const StudySteps = [
 ];
 
 export const topicImportanceOfBuilding = [
-  
   {
     importance: 1,
     title: "ساختمان های با اهمیت خیلی زیاد",
@@ -140,8 +139,6 @@ export const topicImportanceOfBuilding = [
 ];
 
 export const testsData = [
-  
-
   {
     number: 1,
     question:
@@ -179,7 +176,1248 @@ export const testsData = [
   },
   {
     number: 4,
-    question: "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
+    option1: { text: " شمال" },
+    option2: { text: "جنوب" },
+    option3: { text: "شرق" },
+    option4: { text: "غرب" },
+  },{
+    number: 4,
+    question:
+      "جبهه مشرف به فضاي آزاد اتاق ترانسفورماتور در چه جهت مناسب تر می باشد؟",
     option1: { text: " شمال" },
     option2: { text: "جنوب" },
     option3: { text: "شرق" },
@@ -194,3 +1432,139 @@ export const testsData = [
   //   option4: { text: "" },
   // },
 ];
+
+export const booksData = {
+  1: {
+    name: "تعاریف",
+    count: "18",
+    edit: "1392",
+    image:'1.jpg'
+    
+  },
+  2: {
+    name: "نظامات اداری",
+    count: "8",
+    edit: "1384",
+    image:'2.jpg'
+  },
+  3: {
+    name: "حفاظت ساختمان ها در مقابل حریق",
+    count: "18",
+    edit: "1392",
+    image:'1.jpg'
+  },
+  4: {
+    name: "الزامات عمومی ساختمان",
+    count: "65",
+    edit: "1396",
+    image:'1.jpg'
+  },
+  5: {
+    name: "مصالح و فرآورده های ساختمانی",
+    count: "61",
+    edit: "1392",
+    image:'1.jpg'
+  },
+  6: {
+    name: "بارهای وارد بر ساختمان",
+    count: "96",
+    edit: "1392",
+    image:'1.jpg'
+  },
+  7: {
+    name: "ژئوتکنیک و مهندسی پی",
+    count: "120",
+    edit: "1400",
+    image:'1.jpg'
+  },
+  8: {
+    name: "طرح و اجرای ساختمان های با مصالح بنایی",
+    count: "69",
+    edit: "1398",
+    image:'1.jpg'
+  },
+  9: {
+    name: "طرح و اجرای ساختمانهای بتن آرمه",
+    count: "232",
+    edit: "1392",
+    image:'1.jpg'
+  },
+  10: {
+    name: "طرح و اجرای ساختمانهای فولادی",
+    count: "385",
+    edit: "1400",
+    image:'1.jpg'
+  },
+  11: {
+    name: "طرح و اجرای صنعتی ساختمان ها",
+    count: "52",
+    edit: "1400",
+    image:'1.jpg'
+  },
+  12: {
+    name: "ایمنی و حفاظت کار در حین اجر",
+    count: "95",
+    edit: "1392",
+    image:'1.jpg'
+  },
+  13: {
+    name: "طرح و اجرای تاسیسات برقی ساختمان ها",
+    count: "19",
+    edit: "1382",
+    image:'1.jpg'
+  },
+  14: {
+    name: "تاسیسات مکانیکی",
+    count: "16",
+    edit: "1391",
+    image:'1.jpg'
+  },
+  15: {
+    name: "آسانسورها و پلکان برقی",
+    count: "19",
+    edit: "1392",
+    image:'1.jpg'
+  },
+  16: {
+    name: "تاسیسات بهداشتی",
+    count: "96",
+    edit: "1391",
+    image:'1.jpg'
+  },
+  17: {
+    name: "لوله کشی گاز طبیعی",
+    count: "63",
+    edit: "1401",
+    image:'1.jpg'
+  },
+  18: {
+    name: "عایق بندی و تنطیم صدا",
+    count: "14",
+    edit: "1390",
+    image:'1.jpg'
+  },
+  19: {
+    name: "صرفه جویی در مصرف انرژی",
+    count: "47",
+    edit: "",
+    image:'1.jpg'
+  },
+  20: {
+    name: "علائم و تابلوها",
+    count: "59",
+    edit: "1384",
+    image:'1.jpg'
+  },
+  21: {
+    name: "پدافند غیرعامل",
+    count: "65",
+    edit: "1391",
+    image:'1.jpg'
+  },
+  22: {
+    name: "",
+    count: "",
+    edit: "",
+    image:'1.jpg'
+  },
+};

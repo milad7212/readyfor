@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import BookMarkIcon from "../../components/icons/BookMarkIcon";
-
-import ItemTest from "../../components/test/ItemTest";
+import React, { useState } from "react";
 import { testsData } from "../../data/data";
-function TestPage() {
+import BookMarkIcon from "../icons/BookMarkIcon";
+import ItemTest from "./ItemTest";
+
+function ReadQuestions() {
   const [witchQuestion, setWitchQuestion] = useState(0);
 
   const [questions, setQuestions] = useState(testsData);
@@ -75,16 +75,8 @@ function TestPage() {
     console.log("newQuestion", newQuestion);
     setQuestions(newQuestion);
   }
-
   return (
-    <div className=" relative flex min-h-screen flex-col items-center bg-ciBackground p-4 ">
-      <p className="absolute right-0   top-0 p-4 text-ciTiter ">
-        آزمون عمران اجرا اردیبهشت 97
-      </p>
-      <div className="absolute left-0 top-0 flex p-4 text-ciTiter">
-        <p className="ml-4">زمان باقی مانده :</p>
-        <p className="font-bold text-ciForeground">2:54:36</p>
-      </div>
+    <div className="">
       <div
         className="  mt-8 flex w-full  flex-wrap gap-1 p-4"
         style={{ direction: "ltr" }}
@@ -121,4 +113,4 @@ function TestPage() {
   );
 }
 
-export default TestPage;
+export default ReadQuestions;
