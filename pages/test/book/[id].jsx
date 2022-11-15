@@ -25,15 +25,17 @@ function BookPage() {
           />
         ) : (
           <>
-            <div className="flex h-10 w-10 items-center  justify-center rounded-lg bg-ciBackground">
+            <div className="flex h-12 w-12 items-center  justify-center rounded-lg  shadoww">
               <p className=" text-2xl font-bold text-ciOrange ">{id}</p>
             </div>
           </>
         )}
-        <div className="">
-          <Item name={booksData[id]?.name} title="مبحث" />
-          <Item name={booksData[id]?.count} title="تعداد سوالات " />
-        </div>
+        {open && (
+          <div className="">
+            <Item name={booksData[id]?.name} title="مبحث" />
+            <Item name={booksData[id]?.count} title="تعداد سوالات " />
+          </div>
+        )}
       </div>
 
       {/* Main */}
