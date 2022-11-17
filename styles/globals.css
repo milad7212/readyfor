@@ -4,15 +4,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   direction: rtl;
+  transation: all 0.3s ease;
+  scroll-behavior: smooth;
 }
 
-.shadoww{
+.shadoww {
   border-radius: 25px;
 
-box-shadow: inset 5px 5px 32px #030a20,
-            inset -5px -5px 32px #0d2a82;
-            }
-
+  box-shadow: inset 5px 5px 32px #030a20, inset -5px -5px 32px #0d2a82;
+}
 
 @tailwind base;
 @tailwind components;

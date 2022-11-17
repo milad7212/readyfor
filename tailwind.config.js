@@ -24,6 +24,7 @@ module.exports = {
         ciGrayText: "#717f94",
         ciPurple: "#081A51",
         ciLightWhite: "rgba(255,255,255,0.17)",
+        ciYellow:'#f8e367'
       },
     },
   },

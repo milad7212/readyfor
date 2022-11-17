@@ -36,6 +36,10 @@ function BookPage() {
             <Item name={booksData[id]?.count} title="تعداد سوالات " />
           </div>
         )}
+        <div className="flex items-center  gap-1 ">
+          <p className={`text-ciComment font-bold  ${!open  &&'hidden'}`}>صفحه</p>
+          <p className=" text-ciPink mx-auto  font-bold  text-2xl">62</p>
+        </div>
       </div>
 
       {/* Main */}
