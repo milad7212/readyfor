@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { testsData } from "../../data/data";
 import BookMarkIcon from "../icons/BookMarkIcon";
-import ItemTest from "./ItemTest";
+import ItemReadTest from "./ItemReadTest";
+
 
 function ReadQuestions() {
   const [witchQuestion, setWitchQuestion] = useState(0);
@@ -78,7 +79,7 @@ function ReadQuestions() {
   return (
     <div className="">
       <div
-        className="  mt-8 flex w-full  flex-wrap gap-1 p-4"
+        className="  mt-8 flex w-full   flex-wrap gap-1 p-4"
         style={{ direction: "ltr" }}
       >
         {questions.map((item, index) => (
@@ -100,7 +101,7 @@ function ReadQuestions() {
       </div>
 
       <div className="mt-6">
-        <ItemTest
+        <ItemReadTest
           data={questions[witchQuestion]}
           indexQuestion={witchQuestion}
           changeQuestion={changeQuestion}
