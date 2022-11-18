@@ -26,44 +26,17 @@ function ItemReadTest({
         className=" mb-4 flex flex-col   gap-4 py-6"
         onChange={() => onChangeValue(event)}
       >
-        <div className="flex">
-          <input
-            className="mx-1"
-            type="radio"
-            value="1"
-            name={`test_${data.number}_question`}
-            checked={data.answer == 1}
-          />
-          <p className="ml-3">{option1.text}</p>
+        <div className="flex ">
+         
+          <p className="ml-3 bg-ciGreen px-4 py-2 rounded-lg font-bold shadow-test">{option1.text}</p>
         </div>
         <div className="flex">
-          <input
-            className="mx-1"
-            type="radio"
-            value="2"
-            checked={data.answer == 2}
-            name={`test_${data.number}_question`}
-          />
           <p className="ml-3">{option2.text}</p>
         </div>
         <div className="flex">
-          <input
-            className="mx-1"
-            type="radio"
-            value="3"
-            checked={data.answer == 3}
-            name={`test_${data.number}_question`}
-          />{" "}
           <p className="">{option3.text}</p>
         </div>
         <div className="flex">
-          <input
-            className="mx-1"
-            type="radio"
-            value="4"
-            checked={data.answer == 4}
-            name={`test_${data.number}_question`}
-          />{" "}
           <p className="">{option4.text}</p>
         </div>
       </div>
@@ -78,10 +51,7 @@ function ItemReadTest({
           className={`${number == 1 ? "text-ciTiter " : "text-ciCurrentLine"}`}
           onClick={() => changeQuestion(-1)}
         />
-        {/* <EraserIcon
-          className="mr-8"
-          onClick={() => deletedAnsQuestion(indexQuestion)}
-        /> */}
+
         <div className="shadow-page mx-4 rounded-lg px-3 py-2">
           <span className="ml-2 text-xs font-bold">صفحه</span>
           <span className="font-bold">28</span>
@@ -90,9 +60,13 @@ function ItemReadTest({
           <span className="ml-2 text-xs font-bold">بند</span>
           <span className="font-bold">10-2-4-8-1</span>
         </div>
+        <div className="shadow-page mx-4 mr-auto rounded-lg px-3 py-2 ">
+          <span className="ml-2 text-xs font-bold">نظارت</span>
+          <span className="font-bold">1398</span>
+        </div>
         <BookMarkIcon
           onClick={() => bookedAnsQuestion(indexQuestion)}
-          className={`mr-auto duration-200 ease-in active:scale-90  ${
+          className={` duration-200 ease-in active:scale-90  ${
             data.booked ? "fill-ciOrange" : ""
           }`}
         />
