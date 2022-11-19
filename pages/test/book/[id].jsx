@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import LeftIcon from "../../../components/icons/LeftIcon";
 import ReadQuestions from "../../../components/test/ReadQuestions";
 import { booksData } from "../../../data/data";
 
@@ -11,12 +12,19 @@ function BookPage() {
     <div className=" relative flex min-h-screen bg-ciBackground  ">
       {/* Sidebar */}
       <div
-        onClick={() => setOpen(!open)}
         className={`h-screen ${
           open ? "w-72" : "w-20"
         } relative bg-ciPurple  p-4 duration-300`}
       >
-        <div className="absolute -left-3 top-9 h-6 w-6 cursor-pointer border-2 border-ciPurple bg-ciPink"></div>
+        <div
+          onClick={() => setOpen(!open)}
+          className={`absolute -left-4 top-9 h-8 w-8 cursor-pointer 
+           border-2 border-ciPurple bg-ciBackground  rounded-full duration-300 ${ open && 'rotate-180'}  
+           flex justify-center items-center`}
+           
+        >
+          <LeftIcon className='text-ciTiter' />
+        </div>
         {open ? (
           <img
             className="mx-auto h-36 rounded-xl"
@@ -25,7 +33,7 @@ function BookPage() {
           />
         ) : (
           <>
-            <div className="flex h-12 w-12 items-center  justify-center rounded-lg  shadoww">
+            <div className="shadoww flex h-12 w-12  items-center justify-center  rounded-lg">
               <p className=" text-2xl font-bold text-ciOrange ">{id}</p>
             </div>
           </>
@@ -36,10 +44,6 @@ function BookPage() {
             <Item name={booksData[id]?.count} title="تعداد سوالات " />
           </div>
         )}
-        <div className="flex items-center  gap-1 ">
-          <p className={`text-ciComment font-bold  ${!open  &&'hidden'}`}>صفحه</p>
-          <p className=" text-ciPink mx-auto  font-bold  text-2xl">62</p>
-        </div>
       </div>
 
       {/* Main */}
