@@ -20,7 +20,7 @@ function ItemTest({
   }
 
   return (
-    <div className="p-2 md:p-4 relative bg-ciForeground rounded-lg shadow-md max-w-5xl mx-auto ">
+    <div className="p-2 mb-2 md:p-4 relative bg-ciForeground rounded-lg shadow-md max-w-5xl mx-auto ">
       <p className="my-4  text-sm md:text-base text-justify font-bold">{data.question}</p>
 
       <div
