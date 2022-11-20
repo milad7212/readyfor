@@ -57,11 +57,11 @@ function JobPage() {
 
   return (
     <div className=" min-h-screen bg-ciBackground p-4 ">
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <p className="text-ciOrange font-bold text-xl ">
           تقدیم به خانم مهندس آقاملایی{" "}
         </p>
-      </div>
+      </div> */}
       <div className="my-6">
         <input
           value={search}

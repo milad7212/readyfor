@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Select from "react-select";
+import { useForm } from "react-hook-form";
 
 const options = [
   {
@@ -207,12 +208,16 @@ const optionTestMonth = [
 ];
 
 function AddTestPage() {
+  const [witchQuestion, setWitchQuestion] = useState(5);
   return (
     <div className="min-h-screen bg-ciBackground ">
       <Header />
       <div className="flex ">
-        <Form />
-        <NumbersPart />
+        <Form witchQuestion={witchQuestion} />
+        <NumbersPart
+          setWitchQuestion={setWitchQuestion}
+          witchQuestion={witchQuestion}
+        />
       </div>
     </div>
   );
@@ -261,12 +266,20 @@ function Header() {
   );
 }
 
-function NumbersPart() {
+function NumbersPart({ witchQuestion, setWitchQuestion }) {
+  function choiceStyle(value) {
+    if (value == witchQuestion) {
+      return "bg-ciYellow  shadow-lg animate-bounce ";
+    } else {
+      return "bg-gray-300";
+    }
+  }
+
   return (
     <>
       <div
         style={{ direction: "ltr" }}
-        className=" flex max-h-[550px] w-28 flex-col flex-wrap items-center justify-center gap-1  px-2 pb-4"
+        className=" flex max-h-[550px]  w-28 flex-col flex-wrap items-center justify-center gap-1  px-2 pb-4"
       >
         {[
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
@@ -275,9 +288,11 @@ function NumbersPart() {
           55, 56, 57, 58, 59, 60,
         ].map((item, index) => (
           <span
-            onClick={() => changeCertainQuestion(index)}
+            onClick={() => setWitchQuestion(index + 1)}
             key={index}
-            className={`relative  flex h-6 w-6 cursor-pointer items-center justify-center rounded-lg bg-ciForeground text-xs font-bold duration-100 active:scale-90`}
+            className={`${choiceStyle(
+              index + 1
+            )} relative flex h-6 w-6 cursor-pointer items-center justify-center rounded-lg text-xs font-bold duration-100 active:scale-90`}
           >
             {index + 1}
           </span>
@@ -287,24 +302,98 @@ function NumbersPart() {
   );
 }
 
-function Form() {
+function Form({ witchQuestion }) {
+  const [correctOption, setCorrectOption] = useState("");
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
   return (
     <>
       <div className="  mx-4 grow">
-        <form action="">
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className="grid grid-cols-2 gap-4">
             {/* question */}
             <div className="">
               <textarea
+                {...register("question", { required: true })}
                 placeholder="صورت سوال"
                 rows="3"
                 type="text "
                 className="mb-4 block w-full rounded-md py-3 px-4 outline-none "
               />
-              <TextArea label="گزینه اول" />
-              <TextArea label="گزینه دوم" />
-              <TextArea label="گزینه سوم" />
-              <TextArea label="گزینه چهارم" />
+              <div className="relative ">
+                <textarea
+                  {...register("option1", { required: true })}
+                  placeholder="گزینه اول"
+                  rows="2"
+                  type="text "
+                  className="my-2 block  w-full rounded-md py-3 px-4 outline-none "
+                />
+                <div className="absolute left-1 bottom-1">
+                  <input
+                    type="checkbox"
+                    name="correctTest"
+                    onClick={()=>setCorrectOption(1)}
+                    checked={correctOption == 1}
+                    id=""
+                  />
+                </div>
+              </div>
+              <div className="relative ">
+                <textarea
+                  {...register("option2", { required: true })}
+                  placeholder="گزینه دوم"
+                  rows="2"
+                  type="text "
+                  className="my-2 block  w-full rounded-md py-3 px-4 outline-none "
+                />
+                <div className="absolute left-1 bottom-1">
+                  <input
+                    type="checkbox"
+                    name="correctTest"
+                    onClick={()=>setCorrectOption(2)}
+                    checked={correctOption == 2}
+                  />
+                </div>
+              </div>
+              <div className="relative ">
+                <textarea
+                  {...register("option3", { required: true })}
+                  placeholder="گزینه سوم"
+                  rows="2"
+                  type="text "
+                  className="my-2 block  w-full rounded-md py-3 px-4 outline-none "
+                />
+                <div className="absolute left-1 bottom-1">
+                  <input
+                    type="checkbox"
+                    name="correctTest"
+                    onClick={()=>setCorrectOption(3)}
+                    checked={correctOption == 3}
+                  />
+                </div>
+              </div>
+              <div className="relative ">
+                <textarea
+                  {...register("option4", { required: true })}
+                  placeholder="گزینه چهارم"
+                  rows="2"
+                  type="text "
+                  className="my-2 block  w-full rounded-md py-3 px-4 outline-none "
+                />
+                <div className="absolute left-1 bottom-1">
+                  <input
+                    type="checkbox"
+                    name="correctTest"
+                    onClick={()=>setCorrectOption(4)}
+                    checked={correctOption == 4}
+                  />
+                </div>
+              </div>
             </div>
             {/* Ans */}
             <div className="flex flex-col gap-4">
@@ -350,16 +439,7 @@ function Form() {
                   </div>
                 </div>
               </div>
-              {/* <div className="">
-                    <p className="font-black text-ciTiter">کدام آزمون</p>
-                  </div>
-                  <div className="">
-                    <p className="font-black text-ciTiter">کدام سال</p>
-                  </div>
-                  .{" "}
-                  <div className="">
-                    <p className="font-black text-ciTiter">کدام ماه</p>
-                  </div> */}
+
               <div className="">
                 <p className="mb-2 font-black text-ciTiter">توضیحات بیشتر</p>
                 <textarea
@@ -369,14 +449,37 @@ function Form() {
                   className="mb-4 block w-full rounded-md py-3 px-4 outline-none "
                 />
               </div>
+              <div className="h-[80px]">
+                <div className="flex h-full w-[240px] cursor-pointer items-center justify-center rounded-md bg-white duration-300  hover:bg-gray-300 active:scale-95">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div className="mt-8 flex justify-center">
+            <button
+              type="onSubmit"
+              className="mx-auto w-[90%] rounded-lg bg-ciOrange py-4 font-bold duration-200 ease-in hover:scale-105 hover:bg-ciGreen active:scale-95"
+            >
+              <span className="">ثبت سوال</span>
+              <span className="mx-2"> {`( ${witchQuestion} )`}</span>
+            </button>
+          </div>
         </form>
-        <div className="mt-8 flex justify-center">
-          <button className="mx-auto w-[90%] rounded-lg bg-ciOrange py-4 font-bold duration-200 ease-in hover:scale-105 hover:bg-ciGreen active:scale-95">
-            ثبت سوال
-          </button>
-        </div>
       </div>
     </>
   );
