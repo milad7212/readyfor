@@ -20,11 +20,11 @@ function ItemTest({
   }
 
   return (
-    <div className="p-4 relative bg-ciForeground rounded-lg shadow-md max-w-5xl mx-auto ">
-      <p className="my-4  font-bold">{data.question}</p>
+    <div className="p-2 md:p-4 relative bg-ciForeground rounded-lg shadow-md max-w-5xl mx-auto ">
+      <p className="my-4  text-sm md:text-base text-justify font-bold">{data.question}</p>
 
       <div
-        className=" flex flex-col gap-4   py-6 mb-4"
+        className=" flex flex-col gap-4 py-2  md:py-6 mb-4"
         onChange={() => onChangeValue(event)}
       >
         <div className="flex">
@@ -36,7 +36,7 @@ function ItemTest({
             checked={data.answer==1}
             
           />
-          <p className="ml-3">{option1.text}</p>
+          <p className="ml-3 text-sm md:text-base">{option1.text}</p>
         </div>
         <div className="flex">
           <input
@@ -47,7 +47,7 @@ function ItemTest({
             
             name={`test_${data.number}_question`}
           />
-          <p className="ml-3">{option2.text}</p>
+          <p className="ml-3 text-sm md:text-base" >{option2.text}</p>
         </div>
         <div className="flex">
           <input
@@ -57,7 +57,7 @@ function ItemTest({
             checked={data.answer==3}
             name={`test_${data.number}_question`}
           />{" "}
-          <p className="">{option3.text}</p>
+          <p className="ml-3 text-sm md:text-base">{option3.text}</p>
         </div>
         <div className="flex">
           <input
@@ -67,7 +67,7 @@ function ItemTest({
             checked={data.answer==4}
             name={`test_${data.number}_question`}
           />{" "}
-          <p className="">{option4.text}</p>
+          <p className="ml-3 text-sm md:text-base">{option4.text}</p>
         </div>
       </div>
       <div className="flex items-center ">

@@ -78,15 +78,15 @@ function TestPage() {
 
   return (
     <div className=" relative flex min-h-screen flex-col items-center bg-ciBackground p-4 ">
-      <p className="absolute right-0   top-0 p-4 text-ciTiter ">
+      <p className="absolute right-0 text-xs md:text-base  top-0 p-4 text-ciTiter ">
         آزمون عمران اجرا اردیبهشت 97
       </p>
-      <div className="absolute left-0 top-0 flex p-4 text-ciTiter">
-        <p className="ml-4">زمان باقی مانده :</p>
+      <div className="absolute  left-0 top-0 items-center flex p-4 text-ciTiter">
+        <p className="ml-4 text-xs md:text-base">زمان باقی مانده :</p>
         <p className="font-bold text-ciForeground">2:54:36</p>
       </div>
       <div
-        className="  mt-8 flex w-full  flex-wrap gap-1 p-4"
+        className=" mt-4  md:mt-8 flex w-full  flex-wrap gap-1 py-4 h-32 overflow-y-scroll"
         style={{ direction: "ltr" }}
       >
         {questions.map((item, index) => (
@@ -95,7 +95,7 @@ function TestPage() {
             key={index}
             className={`${choiceStyle(
               index
-            )} relative flex h-6 w-6 cursor-pointer items-center justify-center rounded-lg text-xs font-bold duration-100 active:scale-90`}
+            )} relative flex  h-6 w-6 cursor-pointer items-center justify-center rounded-lg text-xs font-bold duration-100 active:scale-90`}
           >
             {index + 1}
             {item.booked && (
