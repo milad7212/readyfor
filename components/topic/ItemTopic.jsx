@@ -8,7 +8,7 @@ function ItemTopic() {
         <span className="text-sm mr-2">۷-۲-۳-۲-۱-۶</span>
       </p>
       <p className="my-4 font-bold">تعداد و فاصله گمانه ها</p>
-      <p className="mb-8 mt-4 leading-loose text-justify">
+      <p className="mb-8 mt-4 md:leading-loose text-justify">
         اقدامات زیر برای تعیین فاصله گمانه ها یا چاه های شناسایی ضروریی است. در
         توضیحات زیر باید توجه داشت هر جا از واژه گمانه استفاده شده است، منظور
         گمانه ماشینی یا چاه دستی شناسایی می باشد چنانچه گمانه زنی به منظور ساخت

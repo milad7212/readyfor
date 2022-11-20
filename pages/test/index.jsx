@@ -8,7 +8,7 @@ function SelectTestPage() {
   return (
     <div className=" relative min-h-screen bg-ciBackground p-4  ">
       <Divider name="حالت آزمون" />
-      <div className="flex  gap-4">
+      <div className="flex justify-center md:justify-start  gap-4">
         <ItemTest
           name="نظارت"
           id="1"
@@ -28,23 +28,21 @@ function SelectTestPage() {
           onClick={() => setWitchTest(3)}
         />
       </div>
-      <div className="my-16 grid grid-cols-2">
-        <section className="flex flex-wrap gap-2">
-          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
-            (item, index) => (
-              <>
-                <div
-                  className="flex h-20 w-20 cursor-pointer flex-col
+      <div className="my-16 mx-auto grid md:grid-cols-2">
+        <section className="flex justify-center md:justify-start flex-wrap gap-2">
+          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => (
+            <>
+              <div
+                className="flex h-20 w-20 cursor-pointer flex-col
                   items-center justify-center rounded-lg bg-ciTiter duration-100
                  ease-out 
                 hover:bg-gray-300 active:scale-95"
-                >
-                  <p className="font-bold">1399</p>
-                  <p className="text-sm">خرداد ماه</p>
-                </div>
-              </>
-            )
-          )}
+              >
+                <p className="font-bold">1399</p>
+                <p className="text-sm">خرداد ماه</p>
+              </div>
+            </>
+          ))}
         </section>
         <section className="">
           {false && (
@@ -55,7 +53,7 @@ function SelectTestPage() {
               </p>
             </div>
           )}
-          <div className="flex h-full flex-col justify-between text-right">
+          <div className="flex h-full  my-8 md:my-0 flex-col justify-between text-right">
             <p className=" font-bold  text-ciPink"> تعداد سوالات : 60</p>
             <p className=" font-bold  text-ciPink"> زمان آزمون : 150 دقیقه</p>
             <p className=" font-bold  text-ciPink"> حدنصاب قبولی : 50 درصد</p>
@@ -74,14 +72,14 @@ function SelectTestPage() {
       </div>
       <Divider name="حالت مطالعه" />
       <HelpIcon />
-      <div className="">
-        <section className="flex flex-wrap gap-2">
-          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
-            (item, index) => (
-              <>
-                <div
-                  onClick={() => router.push(`test/book/${index + 1}`)}
-                  className="w-26     relative flex
+
+      <section className="flex justify-center flex-wrap gap-2">
+        {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
+          (item, index) => (
+            <>
+              <div
+                onClick={() => router.push(`test/book/${index + 1}`)}
+                className="w-26     relative flex
                   cursor-pointer  flex-col items-center justify-center
                  object-fill 
                  filter
@@ -89,26 +87,25 @@ function SelectTestPage() {
                 hover:brightness-150
                   active:scale-95
                   "
-                >
-                  <div
-                    className="absolute top-0 right-0 flex h-7  w-7 items-center justify-center
+              >
+                <div
+                  className="absolute top-0 right-0 flex h-7  w-7 items-center justify-center
                    rounded-md    bg-gray-300 shadow-lg  "
-                  >
-                    <span className="font-bold text-ciBackground">
-                      {Math.round(Math.random() * 20)}
-                    </span>
-                  </div>
-                  <img
-                    className="h-full rounded-xl"
-                    src={`/images/book/${index + 1}.jpg`}
-                    alt=""
-                  />
+                >
+                  <span className="font-bold text-ciBackground">
+                    {Math.round(Math.random() * 20)}
+                  </span>
                 </div>
-              </>
-            )
-          )}
-        </section>
-      </div>
+                <img
+                  className="h-full rounded-xl"
+                  src={`/images/book/${index + 1}.jpg`}
+                  alt=""
+                />
+              </div>
+            </>
+          )
+        )}
+      </section>
     </div>
   );
 }
