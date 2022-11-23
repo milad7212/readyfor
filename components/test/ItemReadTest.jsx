@@ -19,16 +19,17 @@ function ItemReadTest({
   }
 
   return (
-    <div className="relative mx-auto max-w-5xl rounded-lg bg-ciForeground p-4 shadow-md ">
-      <p className="my-4  font-bold">{data.question}</p>
+    <div className="relative m-2 mx-auto max-w-5xl rounded-lg bg-ciForeground p-4 shadow-md ">
+      <p className="my-4  font-bold text-justify text-sm md:text-base">{data.question}</p>
 
       <div
         className=" mb-4 flex flex-col   gap-4 py-6"
         onChange={() => onChangeValue(event)}
       >
         <div className="flex ">
-         
-          <p className="ml-3 bg-ciGreen px-4 py-2 rounded-lg font-bold shadow-test">{option1.text}</p>
+          <p className="shadow-test ml-3 rounded-lg bg-ciGreen px-4 py-2 font-bold">
+            {option1.text}
+          </p>
         </div>
         <div className="flex">
           <p className="ml-3">{option2.text}</p>
@@ -40,7 +41,21 @@ function ItemReadTest({
           <p className="">{option4.text}</p>
         </div>
       </div>
-      <div className="flex items-center ">
+      <div className="flex justify-between my-3">
+        <div className="shadow-page  rounded-lg px-3 py-2">
+          <span className="ml-2 text-xs font-bold">صفحه</span>
+          <span className="font-bold">28</span>
+        </div>
+        <div className="shadow-page  whitespace-nowrap rounded-lg px-3 py-2">
+          <span className="ml-2 text-xs font-bold">بند</span>
+          <span className="font-bold">10-2-4-8-1</span>
+        </div>
+        <div className="shadow-page  rounded-lg px-3 py-2 ">
+          <span className="ml-2 text-xs font-bold">نظارت</span>
+          <span className="font-bold">1398</span>
+        </div>
+      </div>
+      <div className="flex  items-center ">
         <RightIcon
           className="text-ciCurrentLine "
           onClick={() => {
@@ -52,25 +67,14 @@ function ItemReadTest({
           onClick={() => changeQuestion(-1)}
         />
 
-        <div className="shadow-page mx-4 rounded-lg px-3 py-2">
-          <span className="ml-2 text-xs font-bold">صفحه</span>
-          <span className="font-bold">28</span>
-        </div>
-        <div className="shadow-page mx-4 rounded-lg px-3 py-2">
-          <span className="ml-2 text-xs font-bold">بند</span>
-          <span className="font-bold">10-2-4-8-1</span>
-        </div>
-        <div className="shadow-page mx-4 mr-auto rounded-lg px-3 py-2 ">
-          <span className="ml-2 text-xs font-bold">نظارت</span>
-          <span className="font-bold">1398</span>
-        </div>
         <BookMarkIcon
           onClick={() => bookedAnsQuestion(indexQuestion)}
-          className={` duration-200 ease-in active:scale-90  ${
+          className={` mr-auto duration-200 ease-in active:scale-90 ${
             data.booked ? "fill-ciOrange" : ""
           }`}
         />
       </div>
+     
 
       <div className="absolute right-0 left-0 -bottom-4 flex justify-center">
         <p className="flex h-8 w-8 items-center justify-center rounded-full border bg-ciForeground p-4 font-bold shadow-2xl">

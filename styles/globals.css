@@ -14,13 +14,43 @@ body {
   box-shadow: inset 5px 5px 32px #030a20, inset -5px -5px 32px #0d2a82;
 }
 .shadow-page {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-
-  
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.shadow-test{
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+.shadow-test {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .group-date {
+    @apply px-3 py-4
+  text-4xl font-bold
+  tracking-widest text-gray-300;
+  }
+  .timeline {
+    @apply ml-3 mt-3
+  space-y-14 border-r-4 border-gray-200
+  py-16;
+  }
+  .dot {
+    @apply absolute top-5 -right-3.5
+  h-6
+  w-6 rounded-full
+  border-4
+  border-white bg-blue-400;
+  }
+  .timeline-date{
+  @apply
+  text-sm font-bold opacity-40 tracking-widest
+  }
+  .timeline-title{
+  @apply
+  text-3xl text-gray-600 font-semibold
+  tracking-wide mb-2
+  }
+}

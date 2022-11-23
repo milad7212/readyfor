@@ -9,11 +9,11 @@ function BookPage() {
   const router = useRouter();
   const { id } = router.query;
   return (
-    <div className=" relative flex min-h-screen bg-ciBackground  ">
+    <div className={` relative  flex  min-h-screen  bg-ciBackground  `}>
       {/* Sidebar */}
       <div
-        className={`h-screen ${
-          open ? "w-72" : "w-20"
+        className={` ${
+          open ? "w-72 min-h-screen" : "w-20  h-20"
         } relative bg-ciPurple  p-4 duration-300`}
       >
         <div
@@ -33,7 +33,7 @@ function BookPage() {
           />
         ) : (
           <>
-            <div className="shadoww flex h-12 w-12  items-center justify-center  rounded-lg">
+            <div className="shadoww flex h-12 w-12  items-center justify-center   rounded-lg">
               <p className=" text-2xl font-bold text-ciOrange ">{id}</p>
             </div>
           </>
@@ -48,7 +48,7 @@ function BookPage() {
 
       {/* Main */}
 
-      <div className="flex flex-1 justify-center ">
+      <div className="flex w-full justify-center p-4 ">
         <ReadQuestions />
       </div>
     </div>
