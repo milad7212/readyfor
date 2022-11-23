@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import HelpIcon from "../../components/icons/HelpIcon";
+import Image from 'next/image'
 
 function SelectTestPage() {
   const [witchTest, setWitchTest] = useState("");
@@ -43,7 +44,9 @@ function SelectTestPage() {
                 <div
                   onClick={() => setWitchYear(index + 1)}
                   className={`flex h-20 w-20 cursor-pointer flex-col
-                  items-center justify-center rounded-lg ${witchYear ==index+1 ? 'bg-ciDribble':'bg-ciTiter'}  duration-100
+                  items-center justify-center rounded-lg ${
+                    witchYear == index + 1 ? "bg-ciDribble" : "bg-ciTiter"
+                  }  duration-100
                  ease-out 
                 hover:bg-gray-300 active:scale-95`}
                 >
@@ -68,15 +71,14 @@ function SelectTestPage() {
               </motion.div>
             )}
             {witchYear && (
-              <motion.div 
-              initial={{ x: 100, opacity: 0 }}
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
-              
-              className="my-8 flex  h-full flex-col justify-between text-right md:my-0">
+                className="my-8 flex  h-full flex-col justify-between text-right md:my-0"
+              >
                 <p className=" font-bold  text-ciPink"> تعداد سوالات : 60</p>
                 <p className=" font-bold  text-ciPink">
-                
                   {" "}
                   زمان آزمون : 150 دقیقه
                 </p>
@@ -105,33 +107,7 @@ function SelectTestPage() {
       <section className="flex flex-wrap justify-center gap-2">
         {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
           (item, index) => (
-            <>
-              <div
-                onClick={() => router.push(`test/book/${index + 1}`)}
-                className="w-26     relative flex
-                  cursor-pointer  flex-col items-center justify-center
-                 object-fill 
-                 filter
-                duration-100 ease-out
-                hover:brightness-150
-                  active:scale-95
-                  "
-              >
-                <div
-                  className="absolute top-0 right-0 flex h-7  w-7 items-center justify-center
-                   rounded-md    bg-gray-300 shadow-lg  "
-                >
-                  <span className="font-bold text-ciBackground">
-                    {Math.round(Math.random() * 20)}
-                  </span>
-                </div>
-                <img
-                  className="h-full rounded-xl"
-                  src={`/images/book/${index + 1}.jpg`}
-                  alt=""
-                />
-              </div>
-            </>
+            <ItemBook key={index} index={index} />
           )
         )}
       </section>
@@ -160,6 +136,31 @@ function Divider({ name = "تقسیم کننده" }) {
       <span className="h-[2px] w-full rounded-lg bg-ciTiter"></span>
       <p className="mx-4 whitespace-nowrap font-bold text-ciTiter">{name}</p>
       <span className="h-[2px] w-full rounded-lg bg-ciTiter"></span>
+    </div>
+  );
+}
+
+function ItemBook({ index }) {
+  const router = useRouter();
+  return (
+    <div
+      onClick={() => router.push(`test/book/${index + 1}`)}
+      className=" relative flex cursor-pointer  flex-col items-center justify-center object-fill  filter duration-100 ease-out hover:brightness-150 active:scale-95
+                  "
+    >
+      <div
+        className="absolute top-0 right-0 flex h-7  w-7 items-center justify-center
+                   rounded-md    bg-gray-300 shadow-lg  "
+      >
+        <span className="font-bold text-ciBackground">
+          {Math.round(Math.random() * 20)}
+        </span>
+      </div>
+      <img
+        className="w-full rounded-xl"
+        src={`/images/book/${index + 1}.jpg`}
+        alt=""
+      />
     </div>
   );
 }

@@ -77,8 +77,18 @@ function ReadQuestions() {
   }
   return (
     <div className="">
+       <div className="mt-6">
+        <ItemReadTest
+          data={questions[witchQuestion]}
+          indexQuestion={witchQuestion}
+          changeQuestion={changeQuestion}
+          deletedAnsQuestion={deletedAnsQuestion}
+          selectAnsQuestion={selectAnsQuestion}
+          bookedAnsQuestion={bookedAnsQuestion}
+        />
+      </div>
       <div
-        className=" mt-2  flex w-full flex-wrap h-32 overflow-y-scroll  gap-1 p-4 md:mt-8"
+        className=" mt-2  flex  w-full flex-wrap gap-1  p-4 md:mt-8"
         style={{ direction: "ltr" }}
       >
         {questions.map((item, index) => (
@@ -99,16 +109,7 @@ function ReadQuestions() {
         ))}
       </div>
 
-      <div className="mt-6">
-        <ItemReadTest
-          data={questions[witchQuestion]}
-          indexQuestion={witchQuestion}
-          changeQuestion={changeQuestion}
-          deletedAnsQuestion={deletedAnsQuestion}
-          selectAnsQuestion={selectAnsQuestion}
-          bookedAnsQuestion={bookedAnsQuestion}
-        />
-      </div>
+     
     </div>
   );
 }
