@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <Layout>
     <div className=" min-h-screen bg-ciBackground p-4 ">
-      <div className=" flex flex-col items-center justify-center text-ciForeground">
+      <div className=" flex  items-center  gap-5 text-ciForeground">
         <img
-          className="h-20 w-20    md:h-40 md:w-40 rounded-full bg-ciBackgroundTwo"
+          className="h-20 w-20    md:h-32 md:w-32 rounded-3xl bg-ciBackgroundTwo"
           src="/images/foundation/main2.webp"
           alt=""
         />

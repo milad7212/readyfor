@@ -6,8 +6,8 @@ const isActiveStyle='flex items-center px-5 gap-3 font-extrabold border-l-2 bord
 
 
 const categories=[
-    {name:'Animals'},
-    {name:'wallpapers'},
+    {name:'آزمون نظام مهندسی'},
+    {name:'پروفایل'},
     {name:'Photography'},
     {name:'Gaming'},
     {name:'Coding'},
@@ -15,7 +15,7 @@ const categories=[
 
 function Sidebar({closeToggle}) {
   return (
-    <div className="flex flex-col justify-between bg-white h-full  ">
+    <div className="flex flex-col justify-between bg-gray-400 h-full  ">
         <div className="flex flex-col">
             <div className="flex px-5 gap-2 my-6 pt-1 w-[190px] items-center"></div>
             <div className="flex flex-col gap-5">
@@ -23,12 +23,10 @@ function Sidebar({closeToggle}) {
                     <HiHome fontSize={24}/>
                     <span>
 
-                    Home
+                    خانه
                     </span>
                 </div>
-                <h3 className="mt-2 px-5 text-base 2xl:text-xl">
-                    Discover categories
-                </h3>
+                
                 {categories.map((category)=>(
                     <div key={category.name} className="px-5">{category.name}</div>
                 ))}

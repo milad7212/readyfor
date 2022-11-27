@@ -21,7 +21,7 @@ function Layout({ children }) {
         <div className="flex w-full flex-row items-center justify-between p-2  shadow-md">
           <div className="hidden md:block">
             <HiMenu
-              fontSize={40}
+              fontSize={30}
               className="cursor-pointer text-gray-700 "
               onClick={() => setToggleSidebarDes((v) => !v)}
             />
@@ -34,11 +34,11 @@ function Layout({ children }) {
             />
           </div>
           <AiFillInstagram
-            fontSize={40}
+            fontSize={30}
             className="mr-4 cursor-pointer text-gray-700"
           />
           <CgProfile
-            fontSize={40}
+            fontSize={30}
             className="mr-4 cursor-pointer text-gray-700"
           />
         </div>
@@ -76,7 +76,7 @@ function Layout({ children }) {
           </div>
         )}
 
-        <div className="h-screen flex-1 overflow-y-scroll pb-2" ref={scrollRef}>
+        <div className="min-h-screen flex-1  pb-2" ref={scrollRef}>
           <div className="bg-gray-50">
             <div className="h-full">{children}</div>
           </div>
