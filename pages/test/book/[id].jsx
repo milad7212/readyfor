@@ -5,25 +5,25 @@ import ReadQuestions from "../../../components/test/ReadQuestions";
 import { booksData } from "../../../data/data";
 
 function BookPage() {
-  const [open, setOpen] = useState(true);
+  const [toggleSidebar, setToggleSidebar] = useState(true);
   const router = useRouter();
   const { id } = router.query;
   return (
-    <div className={` relative  flex  min-h-screen  bg-ciBackground  `}>
-      {/* Sidebar */}
+    <div className={`   flex  min-h-screen  bg-ciBackground  `}>
       <div
         className={` ${
-          open ? "w-72 min-h-screen" : "w-20  h-20"
-        } relative bg-ciPurple  p-4 duration-300`}
+          open ? "relative min-h-screen w-72" : "absolute  h-20 w-20"
+        }  bg-ciPurple  p-4 duration-300`}
       >
         <div
           onClick={() => setOpen(!open)}
           className={`absolute -left-4 top-9 h-8 w-8 cursor-pointer 
-           border-2 border-ciPurple bg-ciBackground  rounded-full duration-300 ${ open && 'rotate-180'}  
-           flex justify-center items-center`}
-           
+           rounded-full border-2 border-ciPurple  bg-ciBackground duration-300 ${
+             open && "rotate-180"
+           }  
+           flex items-center justify-center`}
         >
-          <LeftIcon className='text-ciTiter' />
+          <LeftIcon className="text-ciTiter" />
         </div>
         {open ? (
           <img
@@ -45,8 +45,6 @@ function BookPage() {
           </div>
         )}
       </div>
-
-      {/* Main */}
 
       <div className="flex w-full justify-center p-4 ">
         <ReadQuestions />

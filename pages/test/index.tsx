@@ -16,22 +16,22 @@ function SelectTestPage() {
           name="نظارت"
           id="1"
           active={witchTest}
-          onClick={() => setWitchTest(1)}
+          onClick={() => setWitchTest('1')}
         />
         <ItemTest
           name="اجرا"
           id="2"
           active={witchTest}
-          onClick={() => setWitchTest(2)}
+          onClick={() => setWitchTest('2')}
         />
         <ItemTest
           name="محاسبات"
           id="3"
           active={witchTest}
-          onClick={() => setWitchTest(3)}
+          onClick={() => setWitchTest('3')}
         />
       </div>
-      {witchTest == 1 && (
+      {witchTest == '1' && (
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}

@@ -1,10 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+// import TopBar from "../components/layout/TopBar";
+import Layout from "../components/layout/Layout";
 import { CategoryData } from "../data/data";
 
 export default function Home() {
   return (
+    <Layout>
     <div className=" min-h-screen bg-ciBackground p-4 ">
       <div className=" flex flex-col items-center justify-center text-ciForeground">
         <img
@@ -33,5 +36,6 @@ export default function Home() {
         ))}
       </section>
     </div>
+    </Layout>
   );
 }

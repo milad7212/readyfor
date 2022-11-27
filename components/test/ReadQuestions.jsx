@@ -77,7 +77,7 @@ function ReadQuestions() {
   }
   return (
     <div className="">
-       <div className="mt-6">
+      <div className="mt-6">
         <ItemReadTest
           data={questions[witchQuestion]}
           indexQuestion={witchQuestion}
@@ -108,8 +108,6 @@ function ReadQuestions() {
           </span>
         ))}
       </div>
-
-     
     </div>
   );
 }

@@ -53,4 +53,10 @@ body {
   text-3xl text-gray-600 font-semibold
   tracking-wide mb-2
   }
+  
 }
+
+
+.shadow-header{
+    box-shadow: 0 3px 5px rgb(0 0 0 / 2%), 0 0 2px rgb(0 0 0 / 5%), 0 1px 4px rgb(0 0 0 / 8%);
+  }
