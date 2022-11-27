@@ -10,7 +10,7 @@ function SelectTestPage() {
   const router = useRouter();
   return (
     <div className=" relative min-h-screen bg-ciBackground p-4  ">
-      <Divider name="حالت آزمون" />
+      {/* <Divider name="حالت آزمون" />
       <div className="flex justify-center gap-4  md:justify-start">
         <ItemTest
           name="نظارت"
@@ -100,7 +100,7 @@ function SelectTestPage() {
             )}
           </section>
         </motion.div>
-      )}
+      )} */}
       <Divider name="حالت مطالعه" />
       <HelpIcon />
 

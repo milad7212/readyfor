@@ -17,12 +17,12 @@ function Layout({ children }) {
 
   return (
     <div className="">
-      <div className="shadow-header  flex bg-ciTiter ">
+      <div className="shadow-header  flex bg-ciBackBeauty border-b border-gray-500 ">
         <div className="flex w-full flex-row items-center justify-between p-2  shadow-md">
           <div className="hidden md:block">
             <HiMenu
               fontSize={30}
-              className="cursor-pointer text-gray-700 "
+              className="cursor-pointer text-gray-200 "
               onClick={() => setToggleSidebarDes((v) => !v)}
             />
           </div>
@@ -35,11 +35,11 @@ function Layout({ children }) {
           </div>
           <AiFillInstagram
             fontSize={30}
-            className="mr-4 cursor-pointer text-gray-700"
+            className="mr-4 cursor-pointer text-gray-200"
           />
           <CgProfile
             fontSize={30}
-            className="mr-4 cursor-pointer text-gray-700"
+            className="mr-4 cursor-pointer text-gray-200"
           />
         </div>
         {/* sideBar in mobile */}

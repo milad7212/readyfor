@@ -1,18 +1,18 @@
 export const CategoryData = [
-  {
-    name: "دفترچه خاک",
-    link: "/foundation/main",
-    content: "12",
-    img: "/images/foundation/soilNote.webp",
-    id: "",
-  },
-  {
-    name: "مباحث",
-    link: "/topics",
-    content: "12",
-    img: "/images/foundation/soilNote.webp",
-    id: "",
-  },
+  // {
+  //   name: "دفترچه خاک",
+  //   link: "/foundation/main",
+  //   content: "12",
+  //   img: "/images/foundation/soilNote.webp",
+  //   id: "",
+  // },
+  // {
+  //   name: "مباحث",
+  //   link: "/topics",
+  //   content: "12",
+  //   img: "/images/foundation/soilNote.webp",
+  //   id: "",
+  // },
   {
     name: "آزمون نظام",
     content: "12",
@@ -21,21 +21,21 @@ export const CategoryData = [
     id: "",
   },
 
-  {
-    name: "میدان کار",
-    content: "12",
-    img: "/images/foundation/soilNote.webp",
-    link: "/job",
-    id: "",
-  },
+  // {
+  //   name: "میدان کار",
+  //   content: "12",
+  //   img: "/images/foundation/soilNote.webp",
+  //   link: "/job",
+  //   id: "",
+  // },
 
-  {
-    name: "آزمایشات عمران",
-    content: "12",
-    img: "/images/foundation/soilNote.webp",
-    link: "",
-    id: "",
-  },
+  // {
+  //   name: "آزمایشات عمران",
+  //   content: "12",
+  //   img: "/images/foundation/soilNote.webp",
+  //   link: "",
+  //   id: "",
+  // },
 ];
 
 export const StudySteps = [

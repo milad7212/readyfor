@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        ciBackBeauty:'#111827',
         ciBackground: "#282a36",
         ciBackgroundTwo: "#383A59",
         ciCurrentLine: "#44475a",
