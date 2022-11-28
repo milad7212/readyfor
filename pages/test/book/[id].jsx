@@ -10,7 +10,7 @@ function BookPage() {
   const { id } = router.query;
   return (
     <div className={`   flex  min-h-screen  bg-ciBackground  `}>
-      <div
+      {false &&<div
         className={` ${
           open ? "relative min-h-screen w-72" : "absolute  h-20 w-20"
         }  bg-ciPurple  p-4 duration-300`}
@@ -44,7 +44,7 @@ function BookPage() {
             <Item name={booksData[id]?.count} title="تعداد سوالات " />
           </div>
         )}
-      </div>
+      </div>}
 
       <div className="flex w-full justify-center p-4 ">
         <ReadQuestions />
