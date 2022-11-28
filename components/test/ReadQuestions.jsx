@@ -27,14 +27,9 @@ function ReadQuestions() {
   }
 
   function choiceStyle(value) {
-    if (questions[value].answer && value == witchQuestion) {
-      return "bg-ciGreen  -translate-y-1 ";
-    }
-    if (questions[value].answer) {
-      return "bg-ciGreen  ";
-    }
+   
     if (value == witchQuestion) {
-      return "bg-ciForeground shadow-lg  ";
+      return "bg-ciGreen shadow-lg -translate-y-1  ";
     } else {
       return "bg-gray-300";
     }
@@ -77,7 +72,7 @@ function ReadQuestions() {
   }
   return (
     <div className="">
-      <div className="mt-6">
+      <div className="mt-1 md:mt-6">
         <ItemReadTest
           data={questions[witchQuestion]}
           indexQuestion={witchQuestion}
@@ -88,7 +83,7 @@ function ReadQuestions() {
         />
       </div>
       <div
-        className=" mt-2  flex  w-full flex-wrap gap-1  p-4 md:mt-8"
+        className=" mt-9  flex  w-full flex-wrap gap-1   md:mt-8"
         style={{ direction: "ltr" }}
       >
         {questions.map((item, index) => (

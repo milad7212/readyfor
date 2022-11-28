@@ -17,7 +17,7 @@ function Layout({ children }) {
 
   return (
     <div className="">
-      <div className="shadow-header  flex bg-ciBackBeauty border-b border-gray-500 ">
+      <div className="shadow-header  flex border-b border-gray-500 bg-ciBackBeauty ">
         <div className="flex w-full flex-row items-center justify-between p-2  shadow-md">
           <div className="hidden md:block">
             <HiMenu
@@ -29,7 +29,7 @@ function Layout({ children }) {
           <div className="block md:hidden">
             <HiMenu
               fontSize={40}
-              className="cursor-pointer text-gray-800 "
+              className="cursor-pointer text-gray-200 "
               onClick={() => setToggleSidebarDes((v) => !v)}
             />
           </div>
