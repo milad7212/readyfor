@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import HelpIcon from "../../components/icons/HelpIcon";
-import Image from 'next/image'
+import Image from "next/image";
 
 function SelectTestPage() {
   const [witchTest, setWitchTest] = useState("");
@@ -104,7 +104,7 @@ function SelectTestPage() {
       <Divider name="حالت مطالعه" />
       <HelpIcon />
 
-      <section className="flex flex-wrap justify-center gap-2">
+      <section className="grid grid-cols-3 gap-1 md:grid-cols-8 md:gap-2">
         {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
           (item, index) => (
             <ItemBook key={index} index={index} />
@@ -145,7 +145,7 @@ function ItemBook({ index }) {
   return (
     <div
       onClick={() => router.push(`test/book/${index + 1}`)}
-      className=" relative flex cursor-pointer  flex-col items-center justify-center object-fill  filter duration-100 ease-out hover:brightness-150 active:scale-95
+      className=" relative  flex cursor-pointer  flex-col items-center justify-center object-fill  filter duration-100 ease-out hover:brightness-150 active:scale-95
                   "
     >
       <div
