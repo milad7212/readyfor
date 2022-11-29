@@ -1,9 +1,10 @@
 import { HiMenu } from "react-icons/hi";
 import { AiFillCloseCircle, AiFillInstagram } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
-
+import {GoHome} from 'react-icons/go'
 import { useEffect, useRef, useState } from "react";
 import Sidebar from "./Sidebar";
+import Link from "next/link";
 
 function Layout({ children }) {
   const [toggleSidebar, setToggleSidebar] = useState(false);
@@ -33,14 +34,18 @@ function Layout({ children }) {
               onClick={() => setToggleSidebarDes((v) => !v)}
             />
           </div>
-          <AiFillInstagram
+          <Link href='/'>
+          <GoHome
             fontSize={30}
             className="mr-4 cursor-pointer text-gray-200"
-          />
+            />
+            </Link>
+          <Link href='/login'>
           <CgProfile
             fontSize={30}
             className="mr-4 cursor-pointer text-gray-200"
-          />
+            />
+            </Link>
         </div>
         {/* sideBar in mobile */}
         {toggleSidebar && (
