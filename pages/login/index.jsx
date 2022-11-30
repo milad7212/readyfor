@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TbEdit } from "react-icons/tb";
 import {motion} from 'framer-motion'
-function login() {
+function Login() {
   const [witchStep, setWitchStep] = useState(1);
   return (
     <div className="min-h-screen  bg-gray-100">
@@ -159,4 +159,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login;
