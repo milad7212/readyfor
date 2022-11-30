@@ -67,7 +67,7 @@ function PlanPage() {
         </div>
         
         <div className="flex justify-center">
-          <button className="px-8 py-2 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+          <button className="px-8 py-2 tracking-wide text-white capitalize transition-colors duration-200 transform bg-ciBackBeauty rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
             انتخاب طرح
           </button>
         </div>
