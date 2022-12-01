@@ -4,12 +4,17 @@ import Link from "next/link";
 // import TopBar from "../components/layout/TopBar";
 import Layout from "../components/layout/Layout";
 import { CategoryData } from "../data/data";
+import {motion} from 'framer-motion'
 
 export default function Home() {
   return (
     
       <div className=" min-h-screen bg-ciBackBeauty p-3 ">
-        <div className=" flex  items-center  gap-5 text-ciForeground">
+        <motion.div 
+        initial={{opacity:0 , y:-100}}
+        animate={{opacity:1,y:0}}
+        transition={{stiffness:2,duration:.9}}
+        className=" flex  items-center  gap-5 text-ciForeground">
           <img
             className="h-20 w-20    rounded-3xl bg-ciBackgroundTwo md:h-32 md:w-32"
             src="/images/foundation/main2.webp"
@@ -22,7 +27,7 @@ export default function Home() {
           <p className=" animate-pulse font-bold md:text-xl">
             راحتتر مهندسی کن
           </p>
-        </div>
+        </motion.div>
         <section className="my-8 mx-auto flex max-w-5xl flex-wrap justify-center  gap-8 ">
           {CategoryData.map((item, index) => (
             <>
