@@ -3,6 +3,9 @@ import React, { useState } from "react";
 
 import ReadQuestions from "../../../components/test/ReadQuestions";
 import { booksData } from "../../../data/data";
+import {MdSource} from 'react-icons/md'
+import {TiSortNumericallyOutline} from 'react-icons/ti'
+import {FiSmile} from 'react-icons/fi'
 
 function BookPage() {
   const [witchStep, setWitchStep] = useState("1");
@@ -21,11 +24,14 @@ function BookPage() {
               <Item
                 title="منبع امتحانات"
                 explain=" اجرا  -  نظارت  - محاسبات"
+                icon={<MdSource fontSize={25} className='text-ciBackgroundTwo'/>}
               />
-              <Item title="تعداد سوالات آمده" explain=" 20 تا از 600" />
+              <Item title="تعداد سوالات آمده" explain=" 20 تا از 600" icon={<TiSortNumericallyOutline fontSize={25} className='text-ciBackgroundTwo'/>}/>
               <Item
                 title="رتبه کتاب از لحاظ تعداد سوال آمده"
+                icon={<FiSmile fontSize={25} className='text-ciBackgroundTwo'/>}
                 explain="1 از 25"
+                
               />
             </div>
           </div>
@@ -63,12 +69,12 @@ function BookPage() {
 
 export default BookPage;
 
-function Item({ title = "title", explain = "explain" }) {
+function Item({ title = "title", explain = "explain" ,icon}) {
   return (
     <>
       <div className="flex items-start rounded-xl bg-white p-4 shadow-lg">
         <div className="flex h-12 w-12 items-center justify-center rounded-full border border-indigo-100 bg-indigo-50">
-          12
+          {icon}
         </div>
         <div className="mr-4">
           <h2 className=" text-sm text-gray-500">{title}</h2>
