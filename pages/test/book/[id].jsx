@@ -18,8 +18,8 @@ function BookPage() {
           <div className="my-1 flex justify-center">
             <img src={`/images/book/${id}.jpg`} alt="" className="rounded-lg" />
           </div>
-          <div className="mt-3 flex flex-col p-2">
-            <h2 className="mb-4 text-2xl font-bold">ویژگی های کتاب</h2>
+          <div className="mt-4 flex flex-col p-2">
+            <h2 className="mb-2 text-2xl font-bold">ویژگی های کتاب</h2>
             <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               <Item
                 title="منبع امتحانات"
@@ -35,16 +35,16 @@ function BookPage() {
               />
             </div>
           </div>
-          <div className="mt-3 flex flex-col p-2">
-            <h2 className="mb-4 text-2xl font-bold">صفحاتی که ازش سوال آمده</h2>
+          <div className="mt-4 flex flex-col p-2">
+            <h2 className="mb-2 text-2xl font-bold">صفحاتی که ازش سوال آمده</h2>
             <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               <ItemPage number="10" title="2 سوال" explain="بند 1-2-3-4-5" />
               <ItemPage number="34" title="1 سوال" explain="بند 1-2-3-4-5" />
               <ItemPage number="42" title="3 سوال" explain="بند 1-2-3-4-5" />
             </div>
           </div>
-          <div className="mt-3 flex flex-col p-2">
-            <h2 className="mb-4 text-2xl font-bold">عملکرد کتاب در آزمون ها</h2>
+          <div className="mt-4 flex flex-col p-2">
+            <h2 className="mb-2 text-2xl font-bold">عملکرد کتاب در آزمون ها</h2>
             <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               <ItemTest title="نظارت-98-شهریور" number="12" explain="3 سوال" />
               <ItemTest number="8" title="نظارت-98-شهریور" explain="3 سوال" />
@@ -61,7 +61,7 @@ function BookPage() {
         </div>
       )}
       {witchStep=='1' && <div className="fixed bottom-0 left-0">
-        <button onClick={()=>setWitchStep(2)} className="bg-ciBackBeauty m-2 p-3 text-ciForeground rounded-lg">شروع مطالعه</button>
+        <button onClick={()=>setWitchStep(2)} className="bg-ciBackBeauty m-2 p-3 text-ciForeground rounded-lg animate-pulse">شروع مطالعه</button>
       </div>}
     </div>
   );
