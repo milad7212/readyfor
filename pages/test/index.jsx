@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import HelpIcon from "../../components/icons/HelpIcon";
 import Image from "next/image";
+import { HiLockClosed } from "react-icons/hi";
+
 
 function SelectTestPage() {
   const [witchTest, setWitchTest] = useState("");
@@ -104,13 +106,18 @@ function SelectTestPage() {
       <Divider name="حالت مطالعه" />
       <HelpIcon />
 
-      <section className="grid grid-cols-3 gap-1 md:grid-cols-8 md:gap-2">
+      <motion.section
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, stiffness: 100 }}
+        className="grid grid-cols-3 gap-1 md:grid-cols-8 md:gap-2"
+      >
         {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
           (item, index) => (
             <ItemBook key={index} index={index} />
           )
         )}
-      </section>
+      </motion.section>
     </div>
   );
 }
@@ -145,9 +152,23 @@ function ItemBook({ index }) {
   return (
     <div
       onClick={() => router.push(`test/book/${index + 1}`)}
-      className=" relative  flex cursor-pointer  flex-col items-center justify-center object-fill  filter duration-100 ease-out hover:brightness-150 active:scale-95
-                  "
+      className=" relative  flex cursor-pointer  flex-col items-center justify-center object-fill 
+       filter duration-100 ease-out hover:brightness-150 active:scale-95"
     >
+      {index > 3 && (
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+            router.push("/plan");
+          }}
+          className="absolute inset-0 flex items-center justify-center rounded-lg  bg-ciRed/20"
+        >
+          <HiLockClosed
+            fontSize={30}
+            className="cursor-pointer text-black duration-200 hover:scale-110"
+          />
+        </div>
+      )}
       <div
         className="absolute top-0 right-0 flex h-7  w-7 items-center justify-center
                    rounded-md    bg-gray-300 shadow-lg  "

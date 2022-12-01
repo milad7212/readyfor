@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 import ReadQuestions from "../../../components/test/ReadQuestions";
 import { booksData } from "../../../data/data";
 import {MdSource} from 'react-icons/md'
@@ -14,7 +14,11 @@ function BookPage() {
   return (
     <div className="bg-gray-50">
       {witchStep == "1" && (
-        <div className="">
+        <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, stiffness: 100 }}
+        className="">
           <div className="my-1 flex justify-center">
             <img src={`/images/book/${id}.jpg`} alt="" className="rounded-lg" />
           </div>
@@ -51,7 +55,7 @@ function BookPage() {
               <ItemTest number="50" title="نظارت-98-شهریور" explain="3 سوال" />
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
       {witchStep == "2" && (
         <div className={`   flex  min-h-screen  bg-ciBackground  `}>
