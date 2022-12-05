@@ -1,11 +1,11 @@
 {
-  "name": "foundation",
+  "name": "nigthbird",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node app.js",
+    "build": "next build && next export",
+    "start": "NODE_ENV=production node app.js",
     "lint": "next lint"
   },
   "dependencies": {
