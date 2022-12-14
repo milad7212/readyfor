@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import HelpIcon from "../../components/icons/HelpIcon";
 import Image from "next/image";
 import { HiLockClosed } from "react-icons/hi";
+import { testDatas } from "../../utils/Output";
 
 
 function SelectTestPage() {
@@ -112,7 +113,7 @@ function SelectTestPage() {
         transition={{ duration: 0.8, stiffness: 100 }}
         className="grid grid-cols-3 gap-1 md:grid-cols-8 md:gap-2"
       >
-        {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
+        {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1].map(
           (item, index) => (
             <ItemBook key={index} index={index} />
           )
@@ -174,7 +175,7 @@ function ItemBook({ index }) {
                    rounded-md    bg-gray-300 shadow-lg  "
       >
         <span className="font-bold text-ciBackground">
-          {Math.round(Math.random() * 20)}
+          {testDatas?.[index+1]?.length ?? 0}
         </span>
       </div>
       <img

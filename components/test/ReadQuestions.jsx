@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { testsData } from "../../data/data";
+
+import { testDatas } from "../../utils/Output";
 import BookMarkIcon from "../icons/BookMarkIcon";
 import ItemReadTest from "./ItemReadTest";
 
-function ReadQuestions() {
+function ReadQuestions({ book }) {
   const [witchQuestion, setWitchQuestion] = useState(0);
 
-  const [questions, setQuestions] = useState(testsData);
+  const [questions, setQuestions] = useState(testDatas?.[book] ?? []);
 
   // const buildItemsQuestions=new Array(testsData.length).
 
@@ -27,7 +28,6 @@ function ReadQuestions() {
   }
 
   function choiceStyle(value) {
-   
     if (value == witchQuestion) {
       return "bg-ciGreen shadow-lg -translate-y-1  ";
     } else {
@@ -73,20 +73,22 @@ function ReadQuestions() {
   return (
     <div className="">
       <div className="mt-1 md:mt-6">
-        <ItemReadTest
-          data={questions[witchQuestion]}
-          indexQuestion={witchQuestion}
-          changeQuestion={changeQuestion}
-          deletedAnsQuestion={deletedAnsQuestion}
-          selectAnsQuestion={selectAnsQuestion}
-          bookedAnsQuestion={bookedAnsQuestion}
-        />
+        {!!questions.length && (
+          <ItemReadTest
+            data={questions[witchQuestion]}
+            indexQuestion={witchQuestion}
+            changeQuestion={changeQuestion}
+            deletedAnsQuestion={deletedAnsQuestion}
+            selectAnsQuestion={selectAnsQuestion}
+            bookedAnsQuestion={bookedAnsQuestion}
+          />
+        )}
       </div>
       <div
         className=" mt-9  flex  w-full flex-wrap gap-1   md:mt-8"
         style={{ direction: "ltr" }}
       >
-        {questions.map((item, index) => (
+        {questions?.map((item, index) => (
           <span
             onClick={() => changeCertainQuestion(index)}
             key={index}

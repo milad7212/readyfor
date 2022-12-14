@@ -8,7 +8,7 @@ import {TiSortNumericallyOutline} from 'react-icons/ti'
 import {FiSmile} from 'react-icons/fi'
 
 function BookPage() {
-  const [witchStep, setWitchStep] = useState("1");
+  const [witchStep, setWitchStep] = useState("2");
   const router = useRouter();
   const { id } = router.query;
   return (
@@ -60,7 +60,7 @@ function BookPage() {
       {witchStep == "2" && (
         <div className={`   flex  min-h-screen  bg-ciBackground  `}>
           <div className="flex w-full justify-center p-4 ">
-            <ReadQuestions />
+            <ReadQuestions book={id} />
           </div>
         </div>
       )}

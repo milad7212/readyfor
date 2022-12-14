@@ -12,10 +12,28 @@ function ItemReadTest({
   deletedAnsQuestion,
   bookedAnsQuestion,
 }) {
-  const { number, option1, option2, option3, option4 } = data;
+  const {
+    number,
+    option1,
+    option2,
+    option3,
+    option4,
+    title,
+    correctOption,
+    paragraph,
+    page,
+  } = data;
 
   function onChangeValue(event) {
     selectAnsQuestion(event.target.value, indexQuestion);
+  }
+  function classForCorrectAns(witchOption){
+    if(witchOption == correctOption){
+      return 'shadow-test rounded-lg  bg-ciGreen px-4 py-2 text-justify text-sm font-bold'
+    }else{
+      return ''
+    }
+
   }
 
   return (
@@ -29,32 +47,33 @@ function ItemReadTest({
         onChange={() => onChangeValue(event)}
       >
         <div className="flex ">
-          <p className="shadow-test text-justify  rounded-lg bg-ciGreen px-4 py-2 text-sm font-bold">
-            1.{' '}{option1.text}
+          <p
+            className={classForCorrectAns(1)}
+          >
+            1. {option1}
           </p>
         </div>
         <div className="flex text-justify text-sm">
-          <p className="">2.{' '}{option2.text}</p>
+          <p className={classForCorrectAns(2)}>2. {option2}</p>
         </div>
         <div className="flex text-justify text-sm">
-          <p className="">3.{' '}{option3.text}</p>
+          <p  className= {classForCorrectAns(3)}>3. {option3}</p>
         </div>
         <div className="flex text-justify text-sm">
-          <p className="">4.{' '}{option4.text}</p>
+          <p  className={classForCorrectAns(4)}>4. {option4}</p>
         </div>
       </div>
       <div className="my-3 flex justify-between">
         <div className="shadow-page  rounded-lg bg-gray-200 px-3 py-2">
           <span className="ml-2 text-xs font-bold">صفحه</span>
-          <span className="font-bold">28</span>
+          <span className="font-bold">{page}</span>
         </div>
         <div className="shadow-page  whitespace-nowrap rounded-lg bg-gray-200 px-3 py-2">
           <span className="ml-2 text-xs font-bold">بند</span>
-          <span className="font-bold">10-2-4-8-1</span>
+          <span className="font-bold">{paragraph}</span>
         </div>
-        <div className="shadow-page  rounded-lg px-3 py-2 bg-gray-200 ">
-          <span className="ml-2 text-xs font-bold">نظارت</span>
-          <span className="font-bold">1398</span>
+        <div className="shadow-page  rounded-lg bg-gray-200 px-3 py-2 ">
+          <span className="ml-2 text-xs font-bold">{title}</span>
         </div>
       </div>
       <div className="flex  items-center ">
