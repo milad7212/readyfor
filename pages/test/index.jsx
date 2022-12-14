@@ -155,7 +155,7 @@ function ItemBook({ index }) {
       className=" relative  flex cursor-pointer  flex-col items-center justify-center object-fill 
        filter duration-100 ease-out hover:brightness-150 active:scale-95"
     >
-      {index > 3 && (
+      {index > 3 && false && (
         <div
           onClick={(e) => {
             e.stopPropagation();

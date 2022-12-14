@@ -2,6 +2,7 @@ import { HiMenu } from "react-icons/hi";
 import { AiFillCloseCircle, AiFillInstagram } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { GoHome } from "react-icons/go";
+import {BsHandThumbsUpFill} from 'react-icons/bs'
 import { useEffect, useRef, useState } from "react";
 import Sidebar from "./Sidebar";
 import Link from "next/link";
@@ -26,32 +27,39 @@ function Layout({ children }) {
       <div className="">
         <div className="shadow-header  flex border-b border-gray-500 bg-ciBackBeauty ">
           <div className="flex w-full flex-row items-center justify-between p-2  shadow-md">
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block">
               <HiMenu
                 fontSize={30}
                 className="cursor-pointer text-gray-200 "
                 onClick={() => setToggleSidebarDes((v) => !v)}
               />
-            </div>
-            <div className="block md:hidden">
+            </div> */}
+            {/* <div className="block md:hidden">
               <HiMenu
                 fontSize={40}
                 className="cursor-pointer text-gray-200 "
                 onClick={() => setToggleSidebarDes((v) => !v)}
               />
-            </div>
+            </div> */}
             <Link href="/">
               <GoHome
                 fontSize={30}
                 className="mr-4 cursor-pointer text-gray-200"
               />
             </Link>
-            <Link href="/login">
+            {/* <Link href="/login">
               <CgProfile
                 fontSize={30}
                 className="mr-4 cursor-pointer text-gray-200"
               />
+            </Link> */}
+            <Link href="/welcome">
+              <BsHandThumbsUpFill
+                fontSize={30}
+                className="mr-4 cursor-pointer text-gray-200"
+              />
             </Link>
+            
           </div>
           {/* sideBar in mobile */}
           {toggleSidebar && (
