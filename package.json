@@ -4,9 +4,10 @@
  "homepage":"https://www.nigthbird.ir/",
   "private": true,
   "scripts": {
-    "dev": "node app.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node app.js"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "^18.11.9",
