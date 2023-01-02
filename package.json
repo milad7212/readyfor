@@ -1,7 +1,7 @@
 {
   "name": "nigthbird",
   "version": "0.1.0",
- "homepage":"https://www.nigthbird.ir/",
+  "homepage": "https://www.nigthbird.ir/",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -13,6 +13,7 @@
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "framer-motion": "^7.6.7",
+    "lottie-react": "^2.3.1",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
