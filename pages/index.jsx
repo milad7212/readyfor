@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import Head from "next/head";
 import SearchDateForBooking from "../components/SearchDateForBooking";
 import BannerOne from "../components/BannerOne";
+import BannerWithOff from "../components/BannerWithOff";
 export default function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <SearchDateForBooking/>
       <BannerOne/>
+      <BannerWithOff/>
     </div>
     </>
   );

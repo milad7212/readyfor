@@ -12,7 +12,7 @@ module.exports = {
         PrimaryText:'#46C9FC',
         SecondaryText:'#4B5563',
         normalText:'#4B565D',
-
+        
       },
     },
   },
