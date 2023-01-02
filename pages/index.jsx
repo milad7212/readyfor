@@ -4,6 +4,7 @@ import SearchDateForBooking from "../components/SearchDateForBooking";
 import BannerOne from "../components/BannerOne";
 import BannerWithOff from "../components/BannerWithOff";
 import CardsThree from "../components/CardsThree";
+import BackgroundWithAnimation from "../components/BackgroundWithAnimation";
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
       <SearchDateForBooking/>
       <BannerOne/>
       <BannerWithOff/>
+     
       <CardsThree/>
     </div>
     </>
