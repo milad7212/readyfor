@@ -4,9 +4,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   direction: rtl;
-  transation: all 0.3s ease;
+  transation: all 0.5s ease;
   scroll-behavior: smooth;
- 
+  
 }
 
 .shadoww {
@@ -27,37 +27,12 @@ body {
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .group-date {
-    @apply px-3 py-4
-  text-4xl font-bold
-  tracking-widest text-gray-300;
-  }
-  .timeline {
-    @apply ml-3 mt-3
-  space-y-14 border-r-4 border-gray-200
-  py-16;
-  }
-  .dot {
-    @apply absolute top-5 -right-3.5
-  h-6
-  w-6 rounded-full
-  border-4
-  border-white bg-blue-400;
-  }
-  .timeline-date{
-  @apply
-  text-sm font-bold opacity-40 tracking-widest
-  }
-  .timeline-title{
-  @apply
-  text-3xl text-gray-600 font-semibold
-  tracking-wide mb-2
-  }
+.rmdp-input {
   
+  border-radius: 11px !important;
+  height: 22px !important;
+  margin: 1px 0 !important;
+  padding: 24px 0px !important;
+  text-align: center !important;
 }
 
-
-.shadow-header{
-    box-shadow: 0 3px 5px rgb(0 0 0 / 2%), 0 0 2px rgb(0 0 0 / 5%), 0 1px 4px rgb(0 0 0 / 8%);
-  }

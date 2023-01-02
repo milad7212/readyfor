@@ -10,7 +10,8 @@ module.exports = {
         primary:'#EAF5FE',
         secondaryDark:'#252F3F',
         PrimaryText:'#46C9FC',
-        SecondaryText:'#4B5563'
+        SecondaryText:'#4B5563',
+        normalText:'#4B565D',
 
       },
     },
