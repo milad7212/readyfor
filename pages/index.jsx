@@ -3,6 +3,7 @@ import Head from "next/head";
 import SearchDateForBooking from "../components/SearchDateForBooking";
 import BannerOne from "../components/BannerOne";
 import BannerWithOff from "../components/BannerWithOff";
+import CardsThree from "../components/CardsThree";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
       <SearchDateForBooking/>
       <BannerOne/>
       <BannerWithOff/>
+      <CardsThree/>
     </div>
     </>
   );

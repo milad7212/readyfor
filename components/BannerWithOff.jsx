@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Lottie from "lottie-react";
-import marriageCouple from '../public/animations/loveHearts.json'
+import marriageCouple from "../public/animations/loveHearts.json";
 function BannerWithOff() {
   return (
     <div className="mx-auto max-w-7xl p-4">
@@ -15,16 +15,18 @@ function BannerWithOff() {
             alt=""
           />
         </div>
-        <div
-          className="flex
-        "
-        >
-          <div className="flex-1 relative flex justify-center items-center flex-col">
-            <p className="text-secondaryDark font-bold text-2xl">تالاری که بیشترین تخفیف را گذاشته</p>
-            <p className="mt-4 text-normalText">از بین تمام تالارها تنها یک تالار میتواند در این جایگاه قرار بگیرد که بیشترین تخفیف را نسبت به دیگر تالار ها بگذارید</p>
-            <div className="w-44 h-44 absolute bottom-0 left-0 ">
-        <Lottie animationData={marriageCouple} loop={true} />
-        </div>
+        <div className="relative flex h-full">
+          <div className="flex  flex-1 flex-col items-center justify-center">
+            <p className="text-2xl font-bold text-secondaryDark">
+              تالاری که بیشترین تخفیف را گذاشته
+            </p>
+            <p className="mt-4 text-normalText">
+              از بین تمام تالارها تنها یک تالار میتواند در این جایگاه قرار بگیرد
+              که بیشترین تخفیف را نسبت به دیگر تالار ها بگذارید
+            </p>
+          </div>
+          <div className="absolute bottom-0 left-5 h-44 w-44 ">
+            <Lottie animationData={marriageCouple} loop={true} />
           </div>
           <div
             style={{ writingMode: "vertical-rl" }}
