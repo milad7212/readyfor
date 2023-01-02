@@ -7,7 +7,7 @@ import "react-multi-date-picker/styles/layouts/mobile.css";
 function SearchDateForBooking() {
   const [selectedDay, setSelectedDay] = useState(null);
   return (
-    <div className="mx-auto -my-2 max-w-6xl">
+    <div className="  mx-auto -my-2 max-w-6xl">
       <div className="relative mx-2 flex gap-2 items-center justify-between rounded-lg bg-[#13485C] p-2 md:p-4 md:pb-4 md:pt-4 pb-6 pt-10 shadow-xl">
         <h1 className="absolute top-2 right-2 md:top-0 md:right-0 md:relative font-bold text-white text-sm md:text-base whitespace-nowrap">تاریخ مراسم</h1>
         <div style={{ direction: "rtl" }}>

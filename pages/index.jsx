@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Head from "next/head";
 import SearchDateForBooking from "../components/SearchDateForBooking";
+import BannerOne from "../components/BannerOne";
 export default function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Home() {
       
       <Hero />
       <SearchDateForBooking/>
+      <BannerOne/>
     </div>
     </>
   );
